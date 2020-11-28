@@ -84,6 +84,15 @@ jobs:
         if: cancelled() || failure()
         #if: always()
 
+      - name: Failure notification if failed
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#githubactions_notifications'
+        if: steps.failure.outcome == 'failure'
+        #if: always()
+
   multi-os:
     needs: run-github-actions
     runs-on: ${{ matrix.os }}
