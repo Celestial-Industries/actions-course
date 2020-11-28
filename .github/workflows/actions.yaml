@@ -62,9 +62,12 @@ jobs:
 
       - name: failure
         id: failure
+        #if: contains(github.ref, 'dev/v')
+        if: ${GITHUB_REF} == 'refs/heads/main'
         run: |
           echo "Error!" 1>&2
           exit 64
+#        continue-on-error: true
 
       - name: Failure notification
         uses: act10ns/slack@v1
@@ -72,8 +75,8 @@ jobs:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#githubactions_notifications'
-        if: always()
-#        if: cancelled() || failure()
+        if: cancelled() || failure()
+        #if: always()
 
   multi-os:
     needs: run-github-actions
@@ -101,5 +104,5 @@ jobs:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#githubactions_notifications'
-        if: always()
-#        if: cancelled() || failure()
+        if: cancelled() || failure()
+        #if: always()
