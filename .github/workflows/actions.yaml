@@ -56,13 +56,12 @@ jobs:
 #      - name: LogGreeting
 #        run: echo "${{ steps.greet.outputs.time }}"
 
-
   multi-os:
     needs: run-github-actions
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-16.04, ubuntu-18.04]
+        os: [ windows-latest, ubuntu-latest, macos-latest ]
 
     steps:
       - name: test all shells
