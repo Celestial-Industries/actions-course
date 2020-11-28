@@ -30,11 +30,14 @@ on:
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: list things
+      - name: List Things
+        id: list-things
         run: |
           pwd
           ls
@@ -45,16 +48,26 @@ jobs:
           echo ${GITHUB_WORKSPACE}
 
       - name: Dispatch Output
+        id: Dispatch_Output
         run: 'echo "field: ${{ github.event.client_payload.version }}"'
 
-#      - name: simple JS actions
-#        id: greet
-#        uses: actions/hello-world-javascript-action@main
-#        with:
-#          who-to-greet: 'Mona the Octocat'
-#
-#      - name: LogGreeting
-#        run: echo "${{ steps.greet.outputs.time }}"
+      - name: Simple JS actions
+        id: greet
+        uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Mona the Octocat'
+
+      - name: Log Greeting
+        run: echo "${{ steps.greet.outputs.time }}"
+
+      - name: Failure notification
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#githubactions_notifications'
+        if: always()
+#        if: cancelled() || failure()
 
   multi-os:
     needs: run-github-actions
@@ -63,11 +76,24 @@ jobs:
       matrix:
         os: [ ubuntu-20.04, ubuntu-18.04, ubuntu-16.04 ]
 #        os: [ windows-latest, ubuntu-latest, macos-latest ]
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
     steps:
       - name: test all shells
+        id: test-shells
         run: echo 'Hello World'
 
       - name: OS version
+        id: os-version
         run: |
           cat /etc/os-release
+
+      - name: Failure Notification
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#githubactions_notifications'
+        if: always()
+#        if: cancelled() || failure()
