@@ -12,6 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+          echo "Error!" 1>&2
+          exit 64
       - name: Python Commnd
         run: |
           import platform
