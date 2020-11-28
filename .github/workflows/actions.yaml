@@ -72,7 +72,7 @@ jobs:
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#steps-context
       - name: failure outcome debug
         run: |
-          'echo ${{ steps.outcome.conclusion }}'
+          'echo ${{ steps.failure.outcome }}'
           'echo ${{ steps.failure.conclusion }}'
 
       - name: Failure notification
