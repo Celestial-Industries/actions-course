@@ -62,12 +62,11 @@ jobs:
 
       - name: failure
         id: failure
-        #if: contains(github.ref, 'dev/v')
         if: github.ref == 'refs/heads/main'
+        continue-on-error: true
         run: |
           echo "Error!" 1>&2
           exit 64
-        continue-on-error: true
 
 # add another step here pringing the output of above
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#steps-context
