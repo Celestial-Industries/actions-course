@@ -1,0 +1,2000 @@
+   65  hostory | grep gitkr
+   66  history | grep gitkr
+  105  mv id_rsa github_personal
+  106  mv id_rsa.pub github_personal.pub
+  107  mv caylent_github id_rsa
+  108  mv caylent_github.pub id_rsa.pub
+  109  chmod 600 id_rsa github_personal
+  110  chmod 644 id_rsa.pub github_personal.pub
+  119  wget https://github.com/helm/helm/releases/download/v3.2.1/helm-v3.2.1-linux-amd64.tar.gz.asc
+  146  git clone https://github.com/jonmosco/kube-ps1.git
+  160  git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
+  182  wget https://github.com/ahmetb/kubectx/releases/download/v0.9.0/kubectx_v0.9.0_linux_x86_64.tar.gz
+  185  wget https://github.com/ahmetb/kubectx/releases/download/v0.9.0/kubens_v0.9.0_linux_x86_64.tar.gz
+  186  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  187  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
+  324  git config --global user.email gary.mcdermott@caylent.com
+  325  nano ~/.gitconfig
+  331  git config 
+  332  git config --global
+  333  git config --list --show-origin
+  335  sudo dpkg -i gitkraken-amd64.deb
+  339  git checkout -b caylent-gary-aws-user
+  340  git push --set-upstream origin caylent-gary-aws-user
+  346  git config --global user.signingkey 3FC2C4F7D689614F
+  347  git config --global commit.gpgsign true
+  368  giot clone git@github.com:pairity/marketplace-mono.git
+  491  git checkout -b DEV-448-add-key-ecs
+  492  git branch -d DEV-448-add-key-ecs
+  493  git checkout -b DEV-456-ecs-ssh-access
+  499  git push --set-upstream origin DEV-456-ecs-ssh-access\n
+  500  aws-vault exec pairity-mfa -- terraform workspace listgit status
+  501  git add modules/resources/bastion/outputs.tf pairity-dev/locals.tf
+  502  git add pairity-dev/locals.tf
+  532  git clone git@github.com:pairity/marketplace-mono.git
+  534  git checkout -b DEV-459-dev-marketplace-container
+  537  git addd frontend.yml ../../frontend/Dockerfile
+  538  git add frontend.yml ../../frontend/Dockerfile
+  540  git add ../../frontend/Dockerfile
+  551  git push --set-upstream origin DEV-459-dev-marketplace-container
+  552  git add Dockerfile
+  553  git clone https://github.com/mcdermg/snippets.git
+  594  git add .github/workflows/frontend.yml\\n
+  598  git checkout -b 'DEV-459-cicd-ecs-permissions'
+  610  git add modules/roles_baseline/main.tf modules/roles_baseline/variables.tf\n
+  611  git push --set-upstream origin DEV-459-cicd-ecs-permissions
+  612  git add modules/roles_baseline/main.tf modules/roles_baseline/outputs.tf
+  617  git add main.tf modules/roles_baseline/main.tf variables.tf
+  627  git commit -m "Fix for ci_cd_policy"
+  631  git add modules/roles_baseline/main.tf
+  632  git commit -m 'Comments roles_baseline'
+  634  git add modules/bootstrap/main.tf
+  635  git add modules/bootstrap/variables.tf
+  636  git commit -m 'Removed ci_cd_role_name from bootstrap module'
+  637  git add main.tf variables.tf
+  638  git add modules/roles_baseline/main.tf modules/roles_baseline/outputs.tf modules/roles_baseline/variables.tf
+  685  git add modules/cross_account_ci_cd_role/
+  686  git commit -m 'ci_cd module alter enabled flag'
+  690  git add pairity-dev/main.tf
+  691  git commit -m 'ci_cd role alter enabled to use dev var'
+  694  git add modules/cross_account_ci_cd_role/outputs.tf
+  695  git commit -m 'ci_cd role module remove output file'
+  700  git checkout -b 'DEV-460-slack-notify-module-version-fix'
+  701  git push --set-upstream origin DEV-460-slack-notify-module-version-fix
+  702  git add modules/resources/bastion/main.tf
+  705  git commit -m 'Added gitignore'
+  706  git add rampk2/terraform\n
+  707  git add rampk2/terraform.plan
+  708  git commit -m 'rm plan'
+  709  nano .gitignore
+  710  git add .gitignore
+  711  git commit -m 'gitignore lib'
+  712  git commit -m 'rmoved .terraform'
+  713  git push --set-upstream origin master
+  714  rm -R .git
+  716  git init
+  717  git commit -m "first commit"
+  718  git remote add origin git@github.com:gary-caylent/caylent-ramp.git
+  726  git status'
+  730  git add modules/alarms_baseline/main.tf
+  733  curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+  737  git diff main.tf
+  769  git branch -d DEV-460-slack-notify-module-version-fix
+  770  git branch -d caylent-gary-aws-user\n
+  771  git checkout DEV-459-cicd-ecs-permissions
+  772  git fetch origin
+  784  git commit -m 'update shared ci_cd policy to assume role in dev a/c'
+  785  git add pairity-shared/main.tf\n
+  786  git commit -m 'Fix typo in shared ci_cd policy document'
+  788  git add pairity-prod/main.tf pairity-shared/main.tf pairity-stage/main.tf
+  799  git branch -d DEV-448
+  804  git commit -m 'fix for ci_cd policy document'
+  805  git commit -m 'Fix role name in piristy shared'
+  809  git commit -m 'Fix missing role/ in assume role policy for ci cd'
+  857  git branch -d DEV-459-cicd-ecs-permissions
+  858  git checkout DEV-456-ecs-ssh-access
+  888  git checkout DEV-459-dev-marketplace-container
+  917  git commit -m 'Fix awscli command'
+  918  git add frontend.yml
+  919  git commit -m 'debug for frontend ECS deploy job'
+  928  git commit -m 'Debug fir created task definition'
+  948  git checkout -b DEV-459-add-sts-tagging-permission
+  949  git push --set-upstream origin DEV-459-add-sts-tagging-permission
+  950  git merge DEV-449
+  953  git add modules/resources/cross_account_role/main.tf pairity-shared/main.tf\n
+  954  git restore pairity-shared/main.tf
+  955  git restore modules/resources/cross_account_role/main.tf
+  956  git add modules/resources/cross_account_role/main.tf
+  957  git commit -m 'Debug aws cli task def' 
+  958  git commit -m 'Debug aws cli task def'
+  965  git commit -m 'Debug aws cli task def\n'
+  966  git commit -m 'Debug task image'
+  967  git commit -m 'debug ECS deploy image issue'
+  968  git rev-parse --short
+  970  git rev-parse --short=4
+  971  git rev-parse --short=4 1785d0add33a53135c9f442de2af1445f66971d9
+  972  git rev-parse --short=6 1785d0add33a53135c9f442de2af1445f66971d9
+  973  git commit -m 'Use env var for short git hash'
+  974  git commit -m 'Debug git hash'
+  975  git commmit
+  976  git commit -m 'debug deploy job env issue'
+  977  git commit -m 'Deploy job env var refactor'
+  978  git commit -m 'Alter step name'
+  979  git commit -m 'Fix typo in job step name'
+ 1023  git branch -d DEV-459-add-sts-tagging-permission
+ 1024  git checkout -b DEV-459-backend-marketplace-build-permission
+ 1025  git checkout DEV-459-backend-marketplace-build-permission
+ 1030  git add modules/cross_account_ci_cd_role/variables.tf
+ 1031  git push --set-upstream origin DEV-459-backend-marketplace-build-permission
+ 1032  git commit -m 'Add state data source'
+ 1033  git commit -m 'Shared account from state'
+ 1036  git commit -m 'Add permissions for Get/Pass role to ci_cd policy'
+ 1037  git commit -m 'Fix data state for accounts'
+ 1042  git commit -m 'Fix data state role names for stage/prod'
+ 1080  git satus
+ 1081  git branch -d DEV-459-backend-marketplace-build-permission
+ 1082  git checkout -b DEV-459-backend-build-permission 
+ 1083  git commit -m 'Removed duplicate shared data resource'
+ 1158  git branch -d DEV-459-backend-build-permission
+ 1159  git push origin --delete DEV-459-backend-build-permission
+ 1160  git checkout -b DEV-459-backend-build-permission
+ 1161  git push --set-upstream origin DEV-459-backend-build-permission
+ 1169  git add tfcloud/
+ 1170  git commit -m 'tfcloud test'
+ 1171  git add tfcloud/main.tf
+ 1172  git commit -m 'sg list'
+ 1179  git clone https://github.com/GoogleCloudPlatform/terraformer.git
+ 1192  git clone https://github.com/cplee/github-actions-demo.git
+ 1193  cd github-actions-demo
+ 1198  git chekout origin/pairity-score-issue-197_deploy_to_eks
+ 1199  git checkout origin/pairity-score-issue-197_deploy_to_eks
+ 1200  git merge pairity-score-issue-197_deploy_to_eks
+ 1217  git add modules/resources/ecs/main.tf modules/resources/ecs/variables.tf
+ 1218  git status\n
+ 1219  git checkout DEV-459-backend-build-permission
+ 1220  git rebase master
+ 1221  git add modules/k8s_baseline/main.tf
+ 1222  git add modules/dsaas/provider.tf
+ 1224  git add modules/dsaas/variables.tf
+ 1225  git add modules/k8s_baseline/prometheus_operator/main.tf
+ 1226  git add modules/k8s_baseline/provider.tf
+ 1227  git add modules/k8s_baseline/variables.tf\n
+ 1228  git add modules/pairity_deployment/main.tf
+ 1229  git add modules/pairity_deployment/outputs.tf
+ 1230  git add modules/resources/eks/outputs.tf
+ 1231  git add pairity-dev/main.tf\n
+ 1232  git add pairity-dev/provider.tf
+ 1233  git add pairity-prod/main.tf
+ 1234  git log --graph --oneline --decorate --date-order --color --boundary @{u}
+ 1235  git commit -m 'Fix for merge issue'
+ 1237  git add modules/k8s_baseline/external_dns.tf
+ 1238  git commit - 'Fix for left over depends on post rebase'
+ 1250  git add modules/cross_account_ci_cd_role/main.tf modules/marketplace/variables.tf
+ 1251  git commit -m
+ 1286  git checkout origin/DEV-463-vpc-peering-shared-dev
+ 1289  git checkout -b DEV-463-vpc-peering
+ 1293  git checkout DEV-463-vpc-peering-shared-dev
+ 1308  git add main.tf pairity-dev/main.tf pairity-dev/variables.tf
+ 1332  git commit -m 'Use module output'
+ 1336  git commit -m 'shared VPC check'
+ 1338  git commit -m 'fix output for vpc peering id'
+ 1345  clear git status
+ 1346  gitt pull
+ 1365  git commit -m 'Tags on peering'
+ 1366  git commit -m 'routes debug with values'
+ 1376  git commit -m "Fix values not found with try"
+ 1377  git commit -m "More trys added for error handling"
+ 1381  git commit -m "Add count and var enabled to peering elements for route"
+ 1382  git commit -m "Add missed count"
+ 1388  git add pairity-dev/variables.tf
+ 1389  git add pairity-shared/variables.tf
+ 1425  git revert
+ 1426  git reset HEAD locals.tf
+ 1435  git reset HEAD main.tf
+ 1462  git add ../.gitignore
+ 1463  git commit -m 'Git ignore all plan files'
+ 1493  curl -Lo /usr/local/bin/copilot https://github.com/aws/copilot-cli/releases/download/v0.1.0/copilot-linux-v0.1.0 && chmod +x /usr/local/bin/copilot && copilot --help
+ 1521  git commit -m "Added Helm Jenkins"
+ 1554  git commit -m 'Add bitnami nginx helm install'
+ 1557  git clone git@github.com:pairity/aws_accounts.git
+ 1562  git checkout DEV-463-vpc-peering-shared-dev\n
+ 1575  git add peering/main.tf
+ 1576  git add peering_accepter/main.tf
+ 1577  git commit -m "Remove previous peeering from VPC module"
+ 1580  git add main.tfgit add pairity-shared/main.tf
+ 1591  git add pairity-dev/main.tf pairity-shared/main.tf
+ 1592  git add pairity-shared/main.tf
+ 1593  git commit -m 'Index for VPC peering connection ID following count'
+ 1612  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+ 1630  git commit -m 'cidr change'
+ 1639  git add modules/resources/vpc/main.tf
+ 1677  git clone https://github.com/IBM/guestbook.git
+ 1691  git clone https://github.com/IBM/helm101
+ 1717  git commit -m "stuff"
+ 1783  git clone https://github.com/mupen64plus/mupen64plus-ui-python.git
+ 1874  git branch -d pairity-score-issue-197_deploy_to_eks
+ 1875  git branch -d DEV-463-vpc-peering-shared-dev
+ 1876  git branch -d DEV-463-vpc-peering DEV-459-cicd-ecs-permissions
+ 1877  git branch -d DEV-459-backend-build-permission DEV-449
+ 1878  git checkout -b DEV-474-user-permissions
+ 1880  git commit -m "Remove caylent users no loner in use"
+ 1884  git push --set-upstream origin DEV-474-user-permissions
+ 1942  git checkout -b "DEV-450-marketplace-SNS-topics"
+ 1944  git add locals.tf main.tf variables.tf
+ 1945  git add main.tf
+ 1946  git push --set-upstream origin DEV-450-marketplace-SNS-topics
+ 1957  git fetch; git checkout DEV-450-marketplace-SNS-topics; git pull origin DEV-450-marketplace-SNS-topics
+ 1969  git add modules/marketplace/main.tf modules/marketplace/variables.tf
+ 1970  git commit -m 'Marketplace SNS delievery settings'
+ 1971  git commit -m "Marketplace SNS delievery settings"
+ 1972  GIT COMMIT -M "SNS topic subscriptions"
+ 1973  git commit -m "SNS topic subscriptions"
+ 1974  git checkout DEV-450-marketplace-SNS-topics
+ 1975  git commit -m 'SNS fix for second subscription typo'
+ 1976  git commit -m 'Add email subscription'
+ 1977  git commit -m 'SNS enpoints to locals'
+ 1978  git commit -m "Fix for local backend domain issue for dev"
+ 1982  git commit -m "Add prod email endpoint to marketplace module local"
+ 2009  git commit -m 'might help if I actually added the workspaces as namespace'
+ 2021  git clone https://github.com/sgtoj/sns-to-sqs-local.git
+ 2025  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+ 2034  git add modules/resources/sns/sns_subscriber/main.tf
+ 2037  git git push
+ 2048  git checkou t master
+ 2049  curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+ 2058  git checkout -b DEV-450-marketplace-SES-config
+ 2059  git push --set-upstream origin DEV-450-marketplace-SES-config\n
+ 2060  git commit -m 'SES config fix sytax'
+ 2085  git clone https://github.com/mcdermg/demotestsite.net.git
+ 2204  sudo apt --purge remove gitkraken
+ 2296  git checkout -b 'DEV-492-demo-env-locals'
+ 2297  git push --set-upstream origin DEV-492-demo-env-locals
+ 2354  git add pairity-shared/locals.tf
+ 2355  git add pairity-shared/marketplace.tf
+ 2356  git add pairity-shared/outputs.tf
+ 2357  git pairity-stage/outputs.tf
+ 2358  git pairity-stage/locals.tf\n
+ 2359  git commit -m 'Fix account for marketplace demo'
+ 2360  git add pairity-stage/locals.tf
+ 2361  GIT STATUS
+ 2362  git commit -m "Move locals from man to locals file for pairity-stage"
+ 2363  git add pairity-stage/main.tf
+ 2364  git commit -m 'remove locals from main'
+ 2365  git add pairity-stage/outputs.tf
+ 2366  git commit -m 'Fix demo marketplace outputs for renaming module'
+ 2367  git checkout removing_david_montano
+ 2368  git commit -m 'Remove caylent users no longer in use'
+ 2370  git branch -d removing_david_montano
+ 2371  git branch -d DEV-450-marketplace-SES-config
+ 2372  git branch -d DEV-450-marketplace-SNS-topics
+ 2373  git branch -d DEV-456-ecs-ssh-access
+ 2374  git branch -D DEV-456-ecs-ssh-access
+ 2375  git push\\n
+ 2397  git commit -m "Debug kms secrets"
+ 2473  git commit -m 'FIx use key for stage for encrypt of reply_email_password'
+ 2474  git commit -m 'Update thtp endpoint for stage'
+ 2475  git commit -m 'Add SLACK_WEBHOOK_ANALYTICS_REQUEST env var'
+ 2476  GIT PULL
+ 2491  git commit -m 'Fix SNS enpoints for local workspace'
+ 2492  git commit -m 'Add try for marketplace locals SNS topics'
+ 2493  git fetch DEV-486-sequelize-rollbacks
+ 2494  git checkout DEV-492-demo-env-locals
+ 2495  git merge DEV-486-sequelize-rollbacks
+ 2496  git add modules/marketplace/locals.tf modules/marketplace/templates/container-definitions-backend.tf.tmpl
+ 2497  git commit -m "test migration on demo"
+ 2498  git reset --hard origin/DEV-492-demo-env-locals
+ 2499  git commit -m 'Add env var for Adminuser to stage & prod'
+ 2525  git commit -m 'Debug reply email issue'
+ 2526  git checkout
+ 2527  git checkout DEV-486-sequelize-rollbacks
+ 2528  git merge DEV-492-demo-env-locals
+ 2529  git checkout -b DEV-492-stage-env-issue
+ 2530  git commit -m 'Stage/prod missing PM2 env vars'
+ 2531  git push --set-upstream origin DEV-492-stage-env-issue\n
+ 2532  git commit -m 'Demo env stop admin user creation'
+ 2533  git add modules/marketplace/main.tf modules/marketplace/locals.tf
+ 2534  git commit -m 'Fix for marketplace SES issue'
+ 2535  git commit -m 'marketplace SES fix try'
+ 2536  git commit -m "marketplace fix SES policy arn"
+ 2537  git commit -m 'marketplace module ses policy fix'
+ 2538  git branch -d DEV-474-user-permissions
+ 2539  git push origin --delete DEV-474-user-permissions
+ 2540  git branch -d DEV-486-sequelize-rollbacks
+ 2541  git branch -d DEV-492-demo-env-locals
+ 2542  git branch -d DEV-492-stage-env-issue
+ 2552  git checkout -b DEV-494-marketplace-prod\n\n
+ 2553  git add pairity-prod/locals.tf pairity-prod/main.tf
+ 2554  git commit -m "Add marketplace to prod'
+ 2555  git commit -m "Add marketplace to prod"
+ 2569  git commit -m 'marketplace prod secrets'
+ 2573  git add modules/marketplace/locals.tf 
+ 2574  git commit -m 'marketplace prod locals'
+ 2575  git push --set-upstream origin DEV-494-marketplace-prod
+ 2577  git add modules/marketplace/locals-backend-secrets.tf\n
+ 2578  git commit -m 'marketplace prod reply email password placeholder'
+ 2580  git commit -m 'marketplace prod fix for rds password issue'
+ 2582  git commit -m 'marketplace prod password fix'
+ 2587  git commit -m 'Marketplace prod nginx config issue fix'
+ 2593  git commit -m 'marketplace prod switch create admin user to false'
+ 2610  git commit -m 'marketplace email addresses'
+ 2611  git add modules/marketplace/locals-backend-secrets.tf modules/marketplace/locals.tf
+ 2612  git commit -m 'marketplace demo & prod reply email passsword fix'
+ 2622  git add modules/marketplace/locals-backend-secrets.tf
+ 2623  git commit -m 'marketplace demo prod reply email password fix'
+ 2657  git add modules/marketplace/locals.tf modules/marketplace/locals-backend-secrets.tf
+ 2658  git commit -m 'Marketplace reply emails and credentials'
+ 2669  git commit -m 'martketplace stage env vars debug'
+ 2670  git add pairity-prod/locals.tf pairity-prod/marketplace.tf pairity-stage/locals.tf pairity-stage/marketplace.tf
+ 2671  git add pairity-prod/locals.tf pairity-stage/locals.tf
+ 2672  git commit -m 'Marketplace stage prod ECR image update'
+ 2675  git commit -m 'Marketplace prod disable PM2 reply'
+ 2676  git dff
+ 2677  git add modules/marketplace/locals.tf pairity-dev/locals.tf pairity-dev/marketplace.tf
+ 2678  git add pairity-dev/data_science.tf
+ 2679  git commit -m 'Marketplace changes for pipeline changes'
+ 2680  git clone https://github.com/sherlock-project/sherlock.git
+ 2684  git commit -m 'Marketplace emails match envs not aws accounts'
+ 2702  git commit -m "Marketplace Instance size for diff env"
+ 2719  git add modules/resources/ecs/main.tf
+ 2720  git commit -m 'Marketplace ECS clsuter key'
+ 2794  git checkout -b DEV-500-ecs-ssh-access
+ 2795  git push --set-upstream origin DEV-500-ecs-ssh-access
+ 2809  git chreckout DEV-497-modify-loadbalancer
+ 2810  git checkout DEV-497-modify-loadbalancer
+ 2812  git clone git@github.com-personal:mcdermg/ansiblePi.git
+ 2837  git checkout DEV-501-route53-records-migration\n
+ 2838  git checkout -b DEV-501-route53-records-migration\n
+ 2840  git push --set-upstream origin DEV-501-route53-records-migration
+ 2863  git checkout DEV-500-ecs-ssh-access
+ 2864  git commit -m 'debug key issue'
+ 2894  git checkout -b DEV-508-marketplace-rds\n
+ 2895  git diff pairity-dev/data_science.tf
+ 2896  git diff pairity-dev/marketplace.tf
+ 2899  git push --set-upstream origin DEV-508-marketplace-rds
+ 2908  git checkout DEV-501-route53-records-migration
+ 2919  git commit -m 'Marketplace route 53 fix for MX record'
+ 2920  git add pairity-prod/marketplace.tf
+ 2921  git commit -m 'Marketplace fix prod typo'
+ 2931  git fetch origin/DEV-483-update-elasticache-redis
+ 2932  git checkout DEV-508-marketplace-rds
+ 2933  git merge origin/DEV-483-update-elasticache-redis
+ 2934  git add pairity-dev/marketplace.tf pairity-stage/marketplace.tf pairity-prod/marketplace.tf
+ 2949  git branch -d DEV-497-modify-loadbalancer DEV-500-ecs-ssh-access DEV-501-route53-records-migration DEV-508-marketplace-rds
+ 2964  git checkout -b DEV-509-ECS-instance-role-SNS-permissions-issue
+ 2970  git push --set-upstream origin DEV-509-ECS-instance-role-SNS-permissions-issue
+ 2971  git commit -m 'Marketplace backend service role fix empty tuple issue'
+ 2972  git commit -m 'Marketplace remove commented line service task'
+ 2973  git commit -m 'Marketplace add SNS topics to service role'
+ 2974  git commit -m "Marketplace service role fix dobel module typo"
+ 2975  git commit -m 'Marketplace leave service account role in place'
+ 2976  git add modules/marketplace/main.tf modules/marketplace/output.tf
+ 2977  git commit -m 'removing marketplace service account user'
+ 2978  git add modules/marketplace/main.tf modules/marketplace/output.tf pairity-dev/outputs.tf pairity-stage/outputs.tf
+ 2979  git commit -m 'Commneted removing marketplace servie account'
+ 2980  git add pairity-dev/outputs.tf
+ 2981  git commit -m 'fix commeted out vpc peering output'
+ 2982  git commit -m 'Remove surplus user for marketplace'
+ 3007  git checkout -b DEV-500-ecs-ssh-nacl\n
+ 3009  git push --set-upstream origin DEV-500-ecs-ssh-nacl
+ 3010  git checkout DEV-500-ecs-ssh-nacl
+ 3011  git checkout dev
+ 3013  git checkout dev-stage-marketplace
+ 3014  git checkout -b dev-stage-marketplace
+ 3015  git add pairity-dev/marketplace.tf
+ 3016  git add pairity-stage/marketplace.tf
+ 3017  git commit -m 'Marketplace reduce ECS dev & stage instances to 1'
+ 3018  git push --set-upstream origin dev-stage-marketplace
+ 3019  git clone git@github.com:pairity/downtime.git
+ 3022  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ./git --dryrun
+ 3023  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ./git/*.* --dryrun
+ 3024  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ./git/* --dryrun
+ 3025  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ./git/ --dryrun
+ 3026  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude "*/git/*" --dryrun
+ 3027  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ".git/*" --dryrun
+ 3028  aws s3 cp . s3://test-gary-pairity-maintence/ --recursive --exclude ".git/*"
+ 3029  git checkout DEV-509-ECS-instance-role-SNS-permissions-issue
+ 3030  git checkout -b DEV-509-ECS-instance-role-SES-permissions-issue
+ 3031  git commit -m 'Marketplace email fix'
+ 3032  git push --set-upstream origin DEV-509-ECS-instance-role-SES-permissions-issue
+ 3033  git commit -m 'Marketplace email fix refactor service role'
+ 3034  git clone git@github.com:caylent/caylent_github.git
+ 3035  git checkout -b gary-permissions-pr-notifications
+ 3036  git push --set-upstream origin gary-permissions-pr-notifications
+ 3037  git add modules/cross_account_ci_cd_role/main.tf
+ 3038  git checkout EV-509-ECS-instance-role-SES-permissions-issue
+ 3039  git checkout DEV-509-ECS-instance-role-SES-permissions-issue
+ 3040  git branch -d DEV-494-marketplace-prod DEV-500-ecs-ssh-nacl DEV-509-ECS-instance-role-SES-permissions-issue DEV-509-ECS-instance-role-SNS-permissions-issue dev-stage-marketplace
+ 3045  git checkout -b marketplace-service-resources
+ 3046  git push --set-upstream origin marketplace-service-resources
+ 3047  git add modules/marketplace/variables.tf
+ 3059  git checkout fix/set-production-endpoint
+ 3060  git mergeorigin/dev-aws
+ 3086  git addd .
+ 3087  git chekout marketplace-service-resources
+ 3110  git add pairity-dev/marketplace.tf pairity-stage/marketplace.tf
+ 3111  git commit -m 'Bump dev & stage ecs clusters back to 2 instances'
+ 3164  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+ 3176  git clone git@github.com:Celestial-Industries/terraform-example-repo.git
+ 3192  git checkout orogin/origin/slack-reminder-1
+ 3193  git add .github/workflows/manual.yml
+ 3194  git commit -m 'Slack messages'
+ 3195  history | grep 'git push mc'
+ 3198  history | grep 'git clone'
+ 3199  git clone git@github.com-personal:Celestial-Industries/terraform-example-repo.git
+ 3200  git checkout origin/slack-reminder-1
+ 3201  git commit -m 'slack reminders test'
+ 3202  git commit -m 'slack reminders test 2'
+ 3203  git commit -m 'slack fix bot token'
+ 3204  git commit -m 'manual step name'
+ 3205  git commit -m 'Fix messages step/runs on'
+ 3206  git commit -m 'Try message again'
+ 3207  git checkout test-agustin
+ 3208  git commit -m 'workflow name'
+ 3209  git checkout slack-reminder-1
+ 3294  git clone git@github.com-personal:dockersamples/example-voting-app.git
+ 3316  sudo apt-get install git python3-gi python3-xlib
+ 3317  git clone https://github.com-personal/mjs7231/pygrid.git
+ 3318  git clone https://github.com/mjs7231/pygrid.git
+ 3346  git clone git@github.com:Moment-Inc/shopmoment-infrastructure.git
+ 3347  git clone github.com/Moment-Inc/shopmoment-infrastructure.wiki.git
+ 3348  git clone https://github.com/Moment-Inc/shopmoment-infrastructure.wiki.git
+ 3349  git clone git@github.com:Moment-Inc/shopmoment-infrastructure.wiki.git
+ 3354  git clone git@github.com:Moment-Inc/shopmoment-infrastructure.wiki.git wiki
+ 3373  cd caylent_github
+ 3374  git branch -d gary-permissions-pr-notifications
+ 3485  less .gitignore
+ 3524  git clone git@github.com:pairity/marketplace-mono.git test-marketplace
+ 3547  git checkout marketplace-service-resources
+ 3614  sudo find . -name '*.tf' | xargs grep -ci 'provider "github"' | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2>0'
+ 3615  sudo find . -name '*.tf' | xargs grep -ci 'github' | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2>0'
+ 3618  sudo find . -name '*.tf' | xargs grep -ci "github_repository" | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2>0'
+ 3620  apm install git-history
+ 3622  cd repos/testing/Terraform/git/ghactions
+ 3634  cd /home/gary/repos/testing/Terraform/git/k6circle/
+ 3638  cd git
+ 3641  docker run -i -v home/gary/repos/testing/Terraform/git/k6circle:/ci/ loadimpact/k6:latest run /ci/loadtests/performance-test.js
+ 3642  docker run -i -v /home/gary/repos/testing/Terraform/git/k6circle:/ci/ loadimpact/k6:latest run /ci/loadtests/performance-test.js
+ 3643  docker run -i -v /home/gary/repos/testing/Terraform/git/k6circle:/ci/loadtests loadimpact/k6:latest run /ci/loadtests/performance-test.js
+ 3675  git checkout PNWSA-16-Excessive-Session-Timeouts
+ 3676  git checkout -b PNWSA-16-Excessive-Session-Timeouts
+ 3677  cd /home/gary/repos/testing/Terraform/git/k6circle
+ 3679  git ststua
+ 3680  git add modules/marketplace/rds.tf
+ 3681  git add modules/marketplace/redis.tf
+ 3682  git push --set-upstream origin PNWSA-16-Excessive-Session-Timeouts
+ 3712  git checkout -b feature/ecs-dynamic-port
+ 3713  git add modules/marketplace/templates/container-definitions-backend.tf.tmpl modules/marketplace/templates/container-definitions-frontend.tf.tmpl
+ 3714  git push --set-upstream origin feature/ecs-dynamic-port
+ 3726  git checkout production
+ 3727  git checkout staging
+ 3728  git checkout agustin/image-resizer-worker-stage
+ 3808  git checkout -b feature/aurora-engine-version 
+ 3829  git add terraform/modules/aurora/main.tf
+ 3830  git checkout -b feature/load-testing
+ 3831  git push --set-upstream origin feature/load-testing
+ 3852  git tag -a v1.0 57f9bc14f9285eb76ce5722cdea5136e2cd40461
+ 3853  git log --pretty=oneline
+ 3854  git branch\\n
+ 3855  git checkout feature/aurora-engine-version
+ 3856  git push --set-upstream origin feature/aurora-engine-version
+ 3864  git checkout -b feature/90-Existing-environment-configurations
+ 3865  git push --set-upstream origin feature/90-Existing-environment-configurations
+ 3871  git add ../../modules/aurora/main.tf
+ 3872  git branch -d feature/aurora-engine-version
+ 3890  git checkout feature/load-testing
+ 3894  git commit -m 'reduced post initial test'
+ 3899  git branch -d PNWSA-16-Excessive-Session-Timeouts feature/90-Existing-environment-configurations\n
+ 3900  git branch feature/ecs-dynamic-port
+ 3901  git checkout feature/ecs-dynamic-port
+ 3904  sudo apt-add-repository https://cli.github.com/packages
+ 3917  git checkout -b feature/marketplace-pipeline-slack-notifications
+ 3918  git push --set-upstream origin feature/marketplace-pipeline-slack-notifications
+ 3944  $GITHUB_TOKEN
+ 3945  echo $GITHUB_TOKEN
+ 3946  export GITHUB_TOKEN="2035a3b35a32d21119d9884990626adec6ce8ea6"
+ 3955  docker run -v /home/gary/repos/caylent/pairity/github/scripts/:/scripts/  -it --rm python bash
+ 4088  cd tuxboot-git
+ 4093  rm tuxboot-git
+ 4094  rm -R tuxboot-git
+ 4096  sudo rm -R tuxboot-git\n
+ 4197  git commit -m 'reset post testing - NO NODE GROUP'
+ 4200  git checkout stage-aws
+ 4201  git checkout -b feature/marketplace-pipeline-slack-notifications-stage
+ 4205  git add .github/workflows/frontend.yml .github/workflows/backend.yml .github/workflows/e2e-tests.yaml
+ 4206  git commit -m 'staging-pipeline-notifications'
+ 4207  git push --set-upstream origin feature/marketplace-pipeline-slack-notifications-stage
+ 4209  cd repos/testing/Terraform/git
+ 4210  terraform import github_repository_project.project import_test
+ 4221  git checkout aws-prod
+ 4222  git checkout -b fix/aws-access-keys-optional
+ 4223  git push --set-upstream origin fix/aws-access-keys-optional
+ 4225  sudo apt install ./gitkraken-amd64.deb
+ 4228  git checkout -b fix/aws-access-keys-optional-demo
+ 4229  git push --set-upstream origin fix/aws-access-keys-optional-demo
+ 4230  git checkout -b fix/aws-access-keys-optional-prod
+ 4231  git add backend/services/mail/transport.js
+ 4233  git push --set-upstream origin fix/aws-access-keys-optional-prod\n
+ 4287  git checkout -b feature/PRTY-NW-24-Normal-Admin-to-Super-Admin-Privilege-Escalation
+ 4288  git push --set-upstream origin feature/PRTY-NW-24-Normal-Admin-to-Super-Admin-Privilege-Escalation
+ 4292  git checkout feature/remove-caylent-users
+ 4293  git checkout -b feature/remove-caylent-users
+ 4294  git add users.tf
+ 4295  git clone git@github.com:pairity/github.git
+ 4296  git checkout -b remove-caylent-users-juan-gabriel
+ 4297  git push --set-upstream origin feature/remove-caylent-users
+ 4299  git checkout feature/PRTY-NW-24-Normal-Admin-to-Super-Admin-Privilege-Escalation
+ 4303  git checkout feature/PNWSA-03-Lack-of-anti-automation-in-LoginUser-operation
+ 4304  git checkout -b feature/PNWSA-03-Lack-of-anti-automation-in-LoginUser-operation
+ 4305  git push --set-upstream origin feature/PNWSA-03-Lack-of-anti-automation-in-LoginUser-operation
+ 4319  wget https://github.com/lucagrulla/cw/releases/download/v3.3.0/cw_3.3.0_Linux_x86_64.tar.gz
+ 4404  git checkout /feature/add-groups
+ 4455  git clone git@github.com:Moment-Inc/shopmoment.com.git
+ 4477  git beanch
+ 4478  git branch -d feature/PRTY-NW-24-Normal-Admin-to-Super-Admin-Privilege-Escalation
+ 4479  git branch -d feature/PNWSA-03-Lack-of-anti-automation-in-LoginUser-operation
+ 4480  git branch -d feature/remove-caylent-users
+ 4481  cd github
+ 4482  git checckout master
+ 4483  git checkout remove-caylent-users-juan-gabriel
+ 4486  git checkout -b 'feature/fix-CIS Benchmark-failures'
+ 4487  git checkout -b 'feature/fix-CIS-Benchmark-failures'
+ 4489  git add modules/resources/account_password_poilicy/
+ 4490  git add modules/iam_baseline/main.tf pairity-shared/main.tf pairity-dev/main.tf pairity-stage/main.tf pairity-prod/main.tf
+ 4491  git push --set-upstream origin feature/fix-CIS-Benchmark-failures
+ 4541  git commit origin/master
+ 4543  git add modules/bootstrap/main.tf modules/iam_baseline/main.tf pairity-shared/main.tf pairity-dev/main.tf pairity-stage/main.tf pairity-prod/
+ 4544  git status\\n
+ 4615  git statusgit status
+ 4617  git restore --staged modules/marketplace/main.tf
+ 4618  git restore --staged modules/resources/eks/main.tf
+ 4619  git add modules/marketplace/main.tf
+ 4620  git add modules/resources/eks/main.tf
+ 4627  git checkout feature/fix-CIS-Benchmark-failures
+ 4637  git add pairity-prod/route53.tf
+ 4639  git ull
+ 4640  git checkout -b feature/missing-HSTS-header-in-HTTPS-responses
+ 4641  git push --set-upstream origin feature/missing-HSTS-header-in-HTTPS-responses
+ 4642  git branch -d feature/fix-CIS-Benchmark-failures
+ 4643  git checkout -b PNWSA-01-GraphQL-Introspection-Enabled
+ 4644  git push --set-upstream origin PNWSA-01-GraphQL-Introspection-Enabled
+ 4664  git clone git@github.com:mastermndio/conduit.git
+ 4668  git clone git@github.com-personal:Celestial-Industries/conduit.git
+ 4672  git checkout -b staging
+ 4673  git checkout -b feature/issue001
+ 4693  git ad .
+ 4694  git unstage node_modules
+ 4695  git add ..
+ 4726  git clone git@github.com-personal:docker/awesome-compose.git
+ 4728  git clone git@github.com-personal:mcdermg/awesome-compose.git
+ 4737  git checkout feature/add-groups
+ 4809  git checkout -b fix/missing-HSTS-header-in-HTTPS-responses
+ 4810  git push --set-upstream origin fix/missing-HSTS-header-in-HTTPS-responses
+ 4812  git checkout aws-stage
+ 4813  git branch -d   DEV-459-dev-marketplace-container dev-aws feature/marketplace-pipeline-slack-notifications feature/marketplace-pipeline-slack-notifications-stage feature/missing-HSTS-header-in-HTTPS-responses fix/aws-access-keys-optional fix/aws-access-keys-optional-demo fix/aws-access-keys-optional-prod
+ 4814  git branch -d fix/set-production-endpoint 
+ 4815  git checkout fix/missing-HSTS-header-in-HTTPS-responses
+ 4816  git checkout -b fix/pairity-stage-hsts-xframe
+ 4817  git push --set-upstream origin fix/pairity-stage-hsts-xframe
+ 4819  git checkout -b fix/pairity-prod-hsts-xframe
+ 4820  git checkout fix/pairity-stage-hsts-xframe
+ 4821  git checkout fix/pairity-prod-hsts-xframe
+ 4822  git add frontend/nginx.template
+ 4823  git push --set-upstream origin fix/pairity-prod-hsts-xframe
+ 4826  cd repos/testing/Terraform/git/monobranch
+ 4827  git pull git@github.com-personal:Celestial-Industries/monobranch.git
+ 4828  git clone git@github.com-personal:Celestial-Industries/monobranch.git
+ 4829  git tag -a v1.0.0
+ 4830  git add file.txt
+ 4831  git tag -a v1.0.1 -m "Releasing version v1.0.1"
+ 4832  git tag -l -n3
+ 4833  git show v1..01
+ 4834  git show v1.0.1
+ 4835  git push origin v1.0.1
+ 4836  git tag -a v1.0.2 -m "Releasing version v1.0.2"
+ 4837  git push origin v1.0.2
+ 4841  git tag -a v1.0.3 -m "Releasing version v1.0.3"
+ 4842  git push origin v1.0.3
+ 4843  git tag -a dev -m "Releasing version dev v1.0.3"
+ 4846  git tag -a v1.0.4 -m "Releasing version v1.0.4"
+ 4847  git push origin v1.0.4
+ 4848  git tag -a dev -m "Releasing version v1.0.4 dev"
+ 4849  git tag -a dev -m "Releasing version dev"
+ 4850  git push origin dev
+ 4855  git checkout -b feature/newthing
+ 4856  git tag -d v1.0.5
+ 4857  git tag -a v1.0.5 -m "Releasing version v1.0.5"
+ 4858  git push origin v1.0.5
+ 4860  git push --set-upstream origin feature/newthing
+ 4862  git branch -d eature/newthing 
+ 4863  git branch -d feature/newthing 
+ 4864  git checkout v1.0.5
+ 4865  git checkout -b aws-dev
+ 4866  git push --set-upstream origin aws-dev\n
+ 4867  git push --set-upstream origin aws-dev
+ 4868  git tag -a v1.0.6 -m "Releasing version v1.0.6"
+ 4869  git push origin v1.0.6
+ 4870  git tag -a v1.6 -m "Releasing version v1.6"
+ 4871  git push origin v1.6
+ 4873  git push origin --delete dev
+ 4874  git tag -d dev
+ 4875  git tag -a dev/v1.0 -m "Demo v1.0"
+ 4876  git branch -d fix/missing-HSTS-header-in-HTTPS-responses fix/pairity-stage-hsts-xframe\n
+ 4878  git add
+ 4879  git commit -m "indentation error"
+ 4880  git commit -m "debugging formatting error"
+ 4881  git commit -m "debugging formatting error2"
+ 4882  git commit -m "debugging formatting error3"
+ 4883  git commit -m "updated env vaer and add step"
+ 4884  git commit -m "updated env vaer and add step 2"
+ 4885  git commit -m "updated env var and added step 3"
+ 4886  git commit -m "updateding to new set env method"
+ 4887  git commit -m "updateding to new set env method and normal env vars"
+ 4888  git commit -m "updateding to new set env method and normal env vars 2"
+ 4889  git commit -m "change get env from branch to use main"
+ 4890  git commit -m "change set config to echo set of env vars"
+ 4891  git commit -m "change set config to echo set of env vars 2"
+ 4892  git commit -m "alter get enviromental from branch to be ref/heads/env/*"
+ 4893  git commit -m "alter get enviromental from branch to be ref/heads/env/* no quotes"
+ 4894  git commit -m "alter get enviromental from branch to be ref/heads/env/* no quotes 2"
+ 4895  git commit -m "alter get enviromental from branch to be ref/heads/env/* no quotes 3 formatting"
+ 4896  git push origin --delete stage/v1.0
+ 4897  git tag -d stage/v1.0
+ 4898  git tag -a stage/v1.0 -m "Stage v1.0"
+ 4899  git push origin stage/v1.0
+ 4900  git restore .github/workflows/frontend.yml
+ 4901  git restore .github/workflows/e2e-tests.yaml
+ 4902  git clone git@github.com-personal:amnk/dd2tf.git
+ 4912  cd /home/gary/repos/personal/monobranch/.github/workflows/
+ 4913  git branch -d aws-dev
+ 4915  cd /home/gary/repos/personal/monobranch/.github/workflows
+ 4916  git branch -d remotes/origin/aws-dev
+ 4917  git push origin --delete aws-dev
+ 4918  git push origin --delete remotes/origin/aws-dev
+ 4919  git push origin --delete origin/aws-dev
+ 4920  git push origin --delete /origin/aws-dev
+ 4921  git tag 
+ 4922  git checkout 9c041010f05974bff4c54fba56ed47123fab775d
+ 4923  git tag -a demo/v1.3 -m "Demo v1.3"
+ 4924  git tag -la
+ 4925  git tag --merged
+ 4926  git tag -l demo
+ 4927  git tag -l demo/&
+ 4928  git tag -l demo/*
+ 4930  git checkout 20923d28e001fa783c35bf775ce4872df02a962d
+ 4931  git tag -a dev/v1.1 -m "Dev v1.1"
+ 4932  git checkout -b feature/pipeline-tidy
+ 4933  cd /home/gary/repos/personal/monobranch/.github/workflows\n
+ 4938  git add manual.yml
+ 4939  git push --set-upstream origin feature/pipeline-tidy
+ 4950  git tag -a dev/v1.2 -m "Dev v1.2"
+ 4951  git push origin dev/v1.2
+ 4952  git commit -m "fix typos in pipeline elif"
+ 4953  git tag -a dev/v1.3 -m "Dev v1.3"
+ 4955  git push origin --tags
+ 4956  git commit -m 'remove commented run echo and switch to aws account secret'
+ 4957  git tag -d stage/v1.1
+ 4958  git push origin --delete  stage/v1.1
+ 4959  git tag -a stage/v1.1 -m "stage 1.1"
+ 4960  git push origin stage/v1.1
+ 4961  git commit -m 'different if github ref for wild card'
+ 4962  git tag -l
+ 4963  git add .'
+ 4964  git commit -m 'git sha & hash fromatting'
+ 4965  git pus
+ 4966  git commit -m 'remove echo git hash new format'
+ 4967  git push tag dev/v1.3
+ 4968  git push dev/v1.3
+ 4969  git commit -m "debug1 on sha hash formatting issue"
+ 4970  git commit -m "debug 2 sha hash issue"
+ 4971  git commit -m "debug 3 sha short hash"
+ 4972  git commit -m "debug4 sha hash"
+ 4973  git commit -m "issue with duplicated step ID"
+ 4974  git commit -m "\ngit push
+ 4975  git commit -m "formatting refs stars"
+ 4976  git commit -m "add star to ref github for dev"
+ 4977  git tag -d dev/v1.3
+ 4978  git push origin --delete dev/v1.3
+ 4979  git commit -m "alter if to contains"
+ 4980  git tag -a dev/v1.3 -m "dev 1.3"
+ 4981  git commit -m "test env"
+ 5017  git clone git@github.com:caylent/library.git
+ 5018  git checkout -b CL-164
+ 5019  git add Terraform/modules/aws/aurora/main.tf
+ 5020  git push --set-upstream origin CL-164
+ 5024  git branch -d CL-164
+ 5061  git restore Dockerfile
+ 5068  git checkout ix/e2e-aws-dev
+ 5069  git add ../.github/workflows/backend.yml ../.github/workflows/e2e-tests.yaml
+ 5070  git commit -m 'Reinstate notification for E2E'
+ 5071  git add ../.github/workflows/e2e-tests.yaml
+ 5072  git commit -m 'remove temp branch trigger'
+ 5077  git commit -m "add /v to if contains for each env"
+ 5078  git tag -a dev/v1.4 -m "Releasing version v1.4 dev"
+ 5079  git push origin dev/v1.4
+ 5082  git commit -m "github ref test"
+ 5083  git commit -m "formatting"
+ 5084  git commit -m "formatting 2"
+ 5085  git commit -m "test all flow"
+ 5086  git commit -m "check sha env var"
+ 5087  git tag -a demo/v1.1 -m "Releasing version v1.1 demo"
+ 5088  git push origin demo/v1.1
+ 5089  git commit -m "fix demo in ecs part"
+ 5090  git tag -a demo/v1.4 -m "Releasing version v1.4 demo"
+ 5091  git push origin demo/v1.4
+ 5092  git commit -m "fix dev build base"
+ 5093  git tag -d stage/v1.2
+ 5094  git push origin --delete stage/v1.2
+ 5095  git tag -a stage/v1.2 -m "Releasing version v1.2 stage"
+ 5096  git push origin stage/v1.2
+ 5097  git commit -m "check dev build base"
+ 5098  git tag -a dev/v1.5 -m "Releasing version v1.5 dev"
+ 5099  git push origin dev/v1.5
+ 5103  git commit -m "try release"
+ 5104  git push origin prod/v1.0.1
+ 5105  git commit -m "try release 2"
+ 5106  git commit -m "try release 3"
+ 5107  git commit -m "Change prod workflow name "
+ 5108  git commit -m "Sytnax issue prod workflow"
+ 5109  git commit -m "Sytnax issue prod workflow 2"
+ 5110  git tag -a prod/v0.0.1 -m "v0.0.1"
+ 5111  git checkout -b feature/pipeline-refactor
+ 5115  git add ../.github/workflows/frontend.yml
+ 5116  git add.
+ 5117  git commit -m "sha testing"
+ 5118  git commit -m "sha testing2"
+ 5119  git commit -m "sha testing3"
+ 5120  git tag -d dev/v1.6
+ 5121  git push origin --delete dev/v1.6
+ 5122  git tag -a dev/v1.6 -m "Releasing version v1.6 dev"
+ 5123  git push origin dev/v1.6
+ 5125  git commit -m 'Refactor backend'
+ 5126  git commit -m 'editd to frontend'
+ 5154  git commit -m 'Fix get latest Task def ARN'
+ 5155  git commit -m "test new notification 1"
+ 5156  git commit -m "notification testing 2"
+ 5157  git commit -m "notification testing 3"
+ 5158  git commit -m "notification testing 3.1"
+ 5159  git commit -m "notification testing 3.2"
+ 5160  git commit -m "notification testing 3.3"
+ 5161  git commit -m "notification testing 4"
+ 5162  git commit -m "notification testing 5"
+ 5163  git commit -m "notification testing 5.1"
+ 5164  git commit -m "notification testing 5.2"
+ 5165  git commit -m "notification testing 5.3"
+ 5166  git commit -m "notification testing 5.4"
+ 5167  git commit -m "notification testing 5.5"
+ 5168  git tag -d dev/v1.7
+ 5169  git push origin --delete dev/v1.7
+ 5170  git tag -a dev/v1.7 -m "Releasing version v1.7 dev"
+ 5171  git push origin dev/v1.7
+ 5172  git commit -m "notification testing 5.6"
+ 5173  git push origin --delete dev/v1.2
+ 5174  git tag -d demo/v1.2
+ 5175  git push origin --delete demo/v1.2
+ 5176  git tag -a demo/v1.2 -m "Releasing version v1.2 demo"
+ 5177  git push origin demo/v1.2
+ 5178  git commit -m "lower env id fixs"
+ 5179  git push --set-upstream origin feature/pipeline-refactor
+ 5185  git clone https://github.com-personal/hashicorp/waypoint-examples.git
+ 5186  git clone https://github.com/hashicorp/waypoint-examples.git
+ 5364  git clone git@github.com:skevy/graphiql-app.git
+ 5384  git nstatus
+ 5389  git commit -m "github actor 1"
+ 5390  git push origin --dele
+ 5391  git commit -m "githib actor 1"
+ 5392  git commit -m "githib actor 2"
+ 5393  git commit -m "githib actor 3"
+ 5394  git commit -m "githib actor 3.1"
+ 5395  git commit -m "githib actor 3.2"
+ 5396  git commit -m "githib actor 3.3"
+ 5397  git commit -m "githib actor 3.4"
+ 5398  git commit -m "githib actor 3.5"
+ 5401  git login
+ 5402  git clone git@github.com:Celestial-Industries/actions_testing.git
+ 5403  git clone git@github.com-personal:Celestial-Industries/actions_testing.git
+ 5405  git checkout remotes/origin/feature/test-notificaions
+ 5406  git switch 
+ 5407  git switch -
+ 5408  git checkout feature/test-notificaions
+ 5410  git commint .
+ 5411  git commit -m 'reminders for pr'
+ 5412  git commit -m "githib actor 3.6"
+ 5413  git tag -d prod/v0.0.1
+ 5414  git push origin --delete prod/v0.0.1
+ 5415  git tag -a prod/v0.0.1 -m "Releasing version v0.0.1"
+ 5416  git push origin prod/v0.0.1
+ 5418  cd Terraform/git
+ 5435  git branch -r > branches.txt
+ 5437  cd .github
+ 5440  git branch -m master master-old-ec2
+ 5441  git push -u origin master-old-ec2
+ 5442  git remote set-head origin master-old-ec2
+ 5443  git branch -a > branches.txt
+ 5445  git push origin --delete DEV-466-End-2-End-Tests-AWS-Dev
+ 5446  git push origin --delete remotes/origin/DEV-466-End-2-End-Tests-AWS-Dev
+ 5447  git branch | jq
+ 5448  git config --global pager.branch false
+ 5449  git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/master-old-ec2
+ 5451  git checkout master-old-ecs
+ 5452  gitn checkout prod-aws
+ 5453  git checkout master-old-ec2
+ 5492  git checkout -b issue-165_remap_master_branch
+ 5493  git branch -d issue-165_remap_master_branch
+ 5494  git push origin --delete master
+ 5495  git branch -a | grep master
+ 5496  git checkout prod-aws
+ 5497  git branch -m prod-aws master
+ 5498  git push -u origin master
+ 5499  git remote set-head origin master
+ 5500  git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/master
+ 5501  git branch -r
+ 5502  git branch -r | grep master-aw
+ 5503  cd .github/workflows
+ 5522  git checkout -b demo-env
+ 5523  git -m issue-130_create_a_demo_environment_and_remap_staging_and_demo_correctly
+ 5524  git branch -m issue-130_create_a_demo_environment_and_remap_staging_and_demo_correctly
+ 5532  git add env.pairity-demo.tf env.tf
+ 5533  git add README.md
+ 5534  git add env.pairity-demo.tf
+ 5535  git push --set-upstream origin issue-130_create_a_demo_environment_and_remap_staging_and_demo_correctly
+ 5540  git checkout -b issue-170_Configure_ALLOWED_HOSTS
+ 5541  git commit -m 'Add allowed hosts to pairity-dev'
+ 5542  git push --set-upstream origin issue-170_Configure_ALLOWED_HOSTS
+ 5543  git commit -m 'Allowed hosts stage & prod'
+ 5792  kubectl apply -f https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch-container-insights/master/k8s-deployment-manifest-templates/deployment-mode/service/cwagent-prometheus/prometheus-eks.yaml
+ 5793  curl https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch-container-insights/master/k8s-deployment-manifest-templates/deployment-mode/service/cwagent-prometheus/prometheus-k8s.yaml | \nsed "s/{{cluster_name}}/default-solid-jackal/;s/{{region_name}}/ca-central-1/" | \nkubectl apply -f -
+ 5838  git status
+ 5839  git add modules/marketplace/locals.tf
+ 5840  git diff
+ 5841  git status
+ 5842  git restore --staged modules/marketplace/locals.tf
+ 5843  git diff
+ 5844  git add modules/marketplace/locals.tf
+ 5845  git commit -m 'pairity-stage add local host to allowed hosts'
+ 5846  git push
+ 5849  git status
+ 5850  git add modules/marketplace/locals.tf
+ 5851  git commit -m "remove localhost pairity-stage"
+ 5852  git push
+ 5904  git pull
+ 5910  git fetch
+ 5911  git branch -a
+ 5912  git checkout feature/eks-upgrade
+ 5913  git pull
+ 5974  git status
+ 5975  git add locals.tf
+ 5976  git commit -m 'Mid update change 1.16'
+ 5977  git push
+ 5978  git pull
+ 5979  git push
+ 5980  git log
+ 5981  git pull
+ 5982  git pull\\n
+ 6074  git status
+ 6075  git add .
+ 6076  git commit
+ 6077  git push
+ 6107  git pull
+ 6108  git checkout master
+ 6109  git pull
+ 6114  git status
+ 6248  helm repo add loki https://grafana.github.io/loki/charts
+ 6255  helm repo add grafana https://grafana.github.io/helm-charts
+ 6266  helm repo add grafana https://grafana.github.io/helm-charts
+ 6283  helm repo add loki https://grafana.github.io/loki/charts
+ 6285  helm repo add loki https://grafana.github.io/loki/charts
+ 6327  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+ 6372  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+ 6408  helm repo add loki https://grafana.github.io/loki/charts
+ 6411  helm repo add grafana https://grafana.github.io/helm-charts
+ 6422  git pull
+ 6423  git fetch
+ 6424  git fetch -a
+ 6426  git branch
+ 6427  git branch -a
+ 6428  git branch -a | grep 'Top-Level'
+ 6429  git branch -a | grep '
+ 6430  git checkout devan/feature/nav-3-1-drop-down
+ 6452  git checkout devan/hotfix/return-adjustments-fix
+ 6456  git checkout master
+ 6457  git pull
+ 6458  git branch
+ 6459  git checkout issue-130_create_a_demo_environment_and_remap_staging_and_demo_correctly
+ 6460  git merge master
+ 6461  git push
+ 6473  cd /home/gary/repos/testing/waypoint/eks/mbaykara.github.io
+ 6523  git clone https://github.com-personal/mbaykara/mbaykara.github.io.git
+ 6525  git clone https://github.com-personal/mbaykara/mbaykara.github.io.git
+ 6526  git clone https://github.com/mbaykara/mbaykara.github.io.git
+ 6528  cd mbaykara.github.io
+ 6624  cd /home/gary/repos/testing/waypoint/eks/mbaykara.github.io/
+ 6783  git pull
+ 6784  git fetch
+ 6785  git branch
+ 6786  git branch -d feature/load-testing
+ 6787  git checkout -b feature/prometheus-operator
+ 6788  git branch
+ 6789  git branch -d feature/add-groups
+ 6790  git branch -d feature/eks-upgrade
+ 6791  git branch
+ 6807  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+ 6847  helm repo add loki https://grafana.github.io/loki/charts
+ 6855  helm repo add grafana https://grafana.github.io/helm-charts
+ 6898  git pull
+ 6899  git checkout CL-144-Grafana-ECS
+ 6911  gitpull
+ 6912  git pull
+ 6975  git status
+ 7073  git branch
+ 7074  git checkout feature/pipeline-refactor
+ 7084  git clone https://github.com/carlosedp/cluster-monitoring.git  
+ 7148  helm repo add loki https://grafana.github.io/loki/charts
+ 7153  helm repo add loki https://grafana.github.io/loki/charts
+ 7175  git pull
+ 7176  git checkout master
+ 7177  git pull
+ 7178  sudo find . -name '*.tf' | xargs grep -ci "source  = "git::https://github.com" | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2>0'\n
+ 7179  sudo find . -name '*.tf' | xargs grep -ci "source  = "https://github.com" | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2>0'\n\n\n
+ 7181  sudo find . -name '*.tf' | xargs grep -ci "source  = "https://github.com" | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2> 0'\n\n\n\n\n"
+ 7182  sudo find . -name '*.tf' | xargs grep -ci 'source  = "https://github.com' | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2> 0'\n\n\n\n\n"\n\n'\n"
+ 7184  sudo find . -name '*.tf' | xargs grep -ci 'https://github.com' | awk 'BEGIN { FS=":"; } { print $1,$2; }' | awk '$2> 0'\n\n\n\n\n"\n\n'\n"
+ 7279  wget https://raw.githubusercontent.com/grafana/loki/v2.0.0/cmd/loki/loki-local-config.yaml -O loki-config.yaml
+ 7282  wget https://raw.githubusercontent.com/grafana/loki/v2.0.0/cmd/loki/loki-local-config.yaml -O loki-config.yaml
+ 7286  wget https://raw.githubusercontent.com/grafana/loki/v2.0.0/cmd/promtail/promtail-docker-config.yaml -O promtail-config.yaml
+ 7366  git branch
+ 7367  git checkout fix/e2e-aws-dev
+ 7368  git pull
+ 7369  git branch
+ 7370  git status
+ 7371  git add .github/workflows/e2e-tests.yaml
+ 7372  git commit
+ 7373  git branch
+ 7374  git checkout dev-aws
+ 7375  git branch -d fix/e2e-aws-dev
+ 7376  git branch -D fix/e2e-aws-dev
+ 7378  git checkout -b fix/e2e-aws-dev
+ 7379  git status
+ 7380  git add .github/workflows/e2e-tests.yaml
+ 7381  git commit
+ 7382  git push
+ 7383  git push --set-upstream origin fix/e2e-aws-dev
+ 7384  git checkout master
+ 7386  git checkout fix/e2e-aws-dev
+ 7387  git checkout master
+ 7388  git checkout fix/e2e-aws-dev
+ 7389  git checkout master
+ 7390  git checkout fix/e2e-master
+ 7391  git checkout -b fix/e2e-master
+ 7392  git status
+ 7393  git add .github/workflows/e2e-tests.yaml
+ 7394  git commit
+ 7395  git add .github/workflows/e2e-tests.yaml
+ 7396  git commit
+ 7397  git push
+ 7398  git push --set-upstream origin fix/e2e-master
+ 7399  git checkout master
+ 7400  git pull
+ 7401  git checkout fix/e2e-master
+ 7402  git merge master
+ 7403  git checkout master
+ 7404  git status
+ 7405  git add .github/workflows/e2e-tests.yaml
+ 7406  git commit -m 'messed up'
+ 7407  git checkout master
+ 7408  git pull
+ 7409  git branch -d fix/e2e-master
+ 7410  git branch -D fix/e2e-master
+ 7411  git branch -a
+ 7412  git push origin --delete fix/e2e-master
+ 7413  git branch -a
+ 7414  git checkout fix/e2e-master
+ 7415  git checkout -b fix/e2e-master
+ 7416  git checkout master
+ 7417  git branch -d fix/e2e-master
+ 7419  git branch -a
+ 7420  git checkout staging-aws
+ 7421  git checkout dev-aws
+ 7422  git checkout master
+ 7423  git checkout dev-aws
+ 7424  git checkout staging-ws
+ 7425  git checkout staging-aws
+ 7426  git pull
+ 7428  git checkout dev-aws
+ 7429  git pull
+ 7431  git checkout master
+ 7432  git checkout fix/e2e-aws-dev
+ 7433  git checkout master
+ 7434  git checkout fix/e2e-aws-dev
+ 7435  git branch -a
+ 7436  git status
+ 7437  git push
+ 7438  git status
+ 7439  git add .github/workflows/e2e-tests.yaml
+ 7440  git commit -m 'add staging to branch trigger'
+ 7441  git checkout master
+ 7442  git branch -a
+ 7443  git checkout feature/pipeline-refactor
+ 7444  git checkout master
+ 7445  git checkout feature/pipeline-refactor
+ 7456  git status
+ 7457  git add .
+ 7458  git commit 
+ 7459  git push
+ 7460  git status
+ 7461  git add .github/workflows/test.yml
+ 7462  git commit -m 'missed adding test in last commit''\n\n'
+ 7463  git push
+ 7465  git branch
+ 7466  git tag
+ 7469  git commit -m 'updated main directly'
+ 7470  git add .
+ 7471  git commit'
+ 7472  git commit
+ 7473  git push
+ 7474  git tag
+ 7475  git tag -a dev/v1.8 -m "dev 1.8"
+ 7476  git push origin dev/v1.3
+ 7477  git push origin dev/v1.8
+ 7478  git status
+ 7479  git add .
+ 7480  git commint -m 'add main to  trigger workflow'
+ 7481  git commit -m 'add main to  trigger workflow'
+ 7482  git push
+ 7483  git tag
+ 7484  git status
+ 7485  git add .
+ 7486  git commit -m 'test workflow trigger with tag & branch'
+ 7487  git push
+ 7488  git status
+ 7489  git add .
+ 7490  git commit -m "remove throwing error"
+ 7491  git add .
+ 7492  git commit -m 'run test only on tags'
+ 7493  git push
+ 7494  git tag -d dev/v1.8
+ 7495  git push origin --delete dev/v1.8
+ 7496  git tag -a dev/v1.8 -m "dev 1.8"
+ 7497  git push origin dev/v1.3
+ 7498  git push origin dev/v1.8
+ 7499  git add .
+ 7500  git commit -m 'workflow run re add main''\n\n\n'
+ 7501  git push
+ 7502  git add .
+ 7503  git commit -m "add python linter"
+ 7504  git push
+ 7505  git tag -d dev/v1.8
+ 7506  git push origin --delete dev/v1.8
+ 7507  git tag -a dev/v1.8 -m "dev 1.8"
+ 7508  git push origin dev/v1.8
+ 7509  git add .
+ 7510  git commit -m "add python linter"
+ 7511  git tag -d dev/v1.8
+ 7512  git push origin --delete dev/v1.8
+ 7513  git tag -a dev/v1.8 -m "dev 1.8"
+ 7514  git push origin dev/v1.8
+ 7515  git add .
+ 7516  git commit
+ 7517  git tag -d dev/v1.8
+ 7518  git push origin --delete dev/v1.8
+ 7519  git tag -a dev/v1.8 -m "dev 1.8"
+ 7520  git push origin dev/v1.8
+ 7521  git add .
+ 7522  git commit
+ 7523  git tag -d dev/v1.8
+ 7524  git push origin --delete dev/v1.8
+ 7525  git tag -a dev/v1.8 -m "dev 1.8"
+ 7526  git push origin dev/v1.8
+ 7527  git add .
+ 7528  git commit -m "linting testing"
+ 7529  git tag -d dev/v1.8
+ 7530  git push origin --delete dev/v1.8
+ 7531  git tag -a dev/v1.8 -m "dev 1.8"
+ 7532  git push origin dev/v1.8
+ 7533  git add .
+ 7534  git commit -m "linting testing"
+ 7535  git tag -d dev/v1.8
+ 7536  git push origin --delete dev/v1.8
+ 7537  git tag -a dev/v1.8 -m "dev 1.8"
+ 7538  git push origin dev/v1.8
+ 7539  git add .
+ 7540  git commit -m "linting testing"
+ 7541  git tag -d dev/v1.8
+ 7542  git push origin --delete dev/v1.8
+ 7543  git tag -a dev/v1.8 -m "dev 1.8"
+ 7544  git push origin dev/v1.8
+ 7545  git checkout -b dev
+ 7549  git add .
+ 7550  git commit -m 'testing branch protection rules'
+ 7551  git push
+ 7552  git push --set-upstream origin dev
+ 7565  git add .
+ 7566  git commit add python script
+ 7567  git commit -m 'add dummy pythong script'
+ 7568  git push
+ 7569  git checkout main
+ 7571  git add . 
+ 7572  git commit -m 'add dummy pythong script'
+ 7573  git push
+ 7593  git add .
+ 7594  git git add .
+ 7595  git commit -m "linting testing"
+ 7596  git tag -d dev/v1.8
+ 7597  git push origin --delete dev/v1.8
+ 7598  git tag -a dev/v1.8 -m "dev 1.8"
+ 7599  git push origin dev/v1.8
+ 7600  git add .
+ 7601  git commit -m "linting testing"
+ 7602  git tag -d dev/v1.8
+ 7603  git push origin --delete dev/v1.8
+ 7604  git tag -a dev/v1.8 -m "dev 1.8"
+ 7605  git push origin dev/v1.8
+ 7606  git add .
+ 7607  git commit -m "linting testing"
+ 7608  git tag -d dev/v1.8
+ 7609  git push origin --delete dev/v1.8
+ 7610  git tag -a dev/v1.8 -m "dev 1.8"
+ 7611  git push origin dev/v1.8
+ 7612  git add .
+ 7613  git commit -m "linting testing"
+ 7614  git tag -d dev/v1.8
+ 7615  git push origin --delete dev/v1.8
+ 7616  git tag -a dev/v1.8 -m "dev 1.8"
+ 7617  git push origin dev/v1.8
+ 7618  git push
+ 7619  git pushgit add .
+ 7620  git commit -m "linting testing"
+ 7621  git tag -d dev/v1.8
+ 7622  git push origin --delete dev/v1.8
+ 7623  git add .
+ 7624  git commit -m "linting testing"
+ 7625  git tag -d dev/v1.8
+ 7626  git push origin --delete dev/v1.8
+ 7627  git tag -a dev/v1.8 -m "dev 1.8"
+ 7628  git push origin dev/v1.8
+ 7629  git status
+ 7630  git add .
+ 7631  git commit -m "linting testing"
+ 7632  git tag -d dev/v1.8
+ 7633  git push origin --delete dev/v1.8
+ 7634  git tag -a dev/v1.8 -m "dev 1.8"
+ 7635  git push origin dev/v1.8
+ 7636  git add .
+ 7637  git commit -m "linting testing"
+ 7638  git tag -d dev/v1.8
+ 7639  git push origin --delete dev/v1.8
+ 7640  git tag -a dev/v1.8 -m "dev 1.8"
+ 7641  git push origin dev/v1.8
+ 7652  git add .
+ 7653  git commit -m "linting testing"
+ 7654  git tag -d dev/v1.8
+ 7655  git push origin --delete dev/v1.8
+ 7656  git tag -a dev/v1.8 -m "dev 1.8"
+ 7657  git push origin dev/v1.8
+ 7666  git status
+ 7667  git add .
+ 7668  git commit -m "linting testing"
+ 7669  git tag -d dev/v1.8
+ 7670  git push origin --delete dev/v1.8
+ 7671  git tag -a dev/v1.8 -m "dev 1.8"
+ 7672  git push origin dev/v1.8
+ 7686  git status
+ 7687  git add .
+ 7688  git commit -m "linting test" 
+ 7689  git push
+ 7690  git tag -d dev/v1.8
+ 7691  git push origin --delete dev/v1.8
+ 7692  git tag -a dev/v1.8 -m "dev 1.8"
+ 7693  git push origin dev/v1.8
+ 7694  git add .
+ 7695  git commit -m "linting testing"
+ 7696  git tag -d dev/v1.8
+ 7697  git push origin --delete dev/v1.8
+ 7698  git tag -a dev/v1.8 -m "dev 1.8"
+ 7699  git push origin dev/v1.8
+ 7700  git push
+ 7701  git add .
+ 7702  git commit -m "linting testing"
+ 7703  git tag -d dev/v1.8
+ 7704  git push origin --delete dev/v1.8
+ 7705  git tag -a dev/v1.8 -m "dev 1.8"
+ 7706  git push origin dev/v1.8
+ 7707  git add .
+ 7708  git commit -m "linting testing"
+ 7709  git tag -d dev/v1.8
+ 7710  git push origin --delete dev/v1.8
+ 7711  git tag -a dev/v1.8 -m "dev 1.8"
+ 7712  git push origin dev/v1.8
+ 7713  git add .
+ 7714  git commit -m "linting testing"
+ 7715  git tag -d dev/v1.8
+ 7716  git push origin --delete dev/v1.8
+ 7717  git tag -a dev/v1.8 -m "dev 1.8"
+ 7718  git push origin dev/v1.8
+ 7719  git add .
+ 7720  git commit -m "linting testing"
+ 7721  git tag -d dev/v1.8
+ 7722  git push origin --delete dev/v1.8
+ 7723  git tag -a dev/v1.8 -m "dev 1.8"
+ 7724  git push origin dev/v1.8
+ 7730  git pull
+ 7753  git staus
+ 7754  git status
+ 7756  git add terraform/organization/environments/helm_values/prometheus-operator/
+ 7757  git add terraform/organization/environments/locals.tf
+ 7758  git status
+ 7759  git commit
+ 7760  git push
+ 7761  git push --set-upstream origin feature/prometheus-operator
+ 7763  git branch -a
+ 7764  git checkout master
+ 7765  git pull
+ 7766  git checkout feature/add-elasticache-support
+ 7767  git checkout master
+ 7769  git pull
+ 7770  git branch
+ 7771  git checkout feature/add-elasticache-support
+ 7772  git pull
+ 7773  git branch
+ 7774  git checkout feature/prometheus-operator
+ 7776  git branch
+ 7777  git checkout feature/add-elasticache-support
+ 7778  git pull
+ 7779  git checkout feature/prometheus-operator
+ 7782  git add .
+ 7783  git commit -m "linting testing"
+ 7784  git tag -d dev/v1.8
+ 7785  git push origin --delete dev/v1.8
+ 7786  git tag -a dev/v1.8 -m "dev 1.8"
+ 7787  git push origin dev/v1.8
+ 7788  git add .
+ 7789  git commit -m "linting testing"
+ 7790  git tag -d dev/v1.8
+ 7791  git push origin --delete dev/v1.8
+ 7792  git tag -a dev/v1.8 -m "dev 1.8"
+ 7793  git push origin dev/v1.8
+ 7794  git add .
+ 7795  git commit -m "linting testing"
+ 7796  git tag -d dev/v1.8
+ 7797  git push origin --delete dev/v1.8
+ 7798  git tag -a dev/v1.8 -m "dev 1.8"
+ 7799  git push origin dev/v1.8
+ 7800  git add .
+ 7801  git commit -m "linting testing"
+ 7802  git push
+ 7803  git checkout -b feature/test-lint-pr-main
+ 7806  git add .
+ 7807  git commit -m "changes to text file"
+ 7808  git push
+ 7809  git push --set-upstream origin feature/test-lint-pr-main
+ 7813  git add .
+ 7814  git commit -m "linting testing"
+ 7815  git push
+ 7816  git config user.name "mcdermg"
+ 7817  git config user.email "mcdermg@tcd.ie"
+ 7819  git add .
+ 7820  git commit -m 'checkimg git user'
+ 7821  git push
+ 7830  git config --global user.name
+ 7831  git config --global user.email
+ 7832  git config user.email
+ 7836  git config user.email
+ 7837  git config --list
+ 7838  git checkout main
+ 7839  git pull
+ 7840  git branch
+ 7841  git branch -d feature/test-lint-pr-main
+ 7842  git add .
+ 7843  git commit -m "linting testing"
+ 7844  git push
+ 7845  git pr list
+ 7854  git branch
+ 7855  git checkout -b feature/pr-gh-cli
+ 7858  git add .
+ 7859  git commit -m 'testing reopen pr GH action'
+ 7860  git push
+ 7861  git push --set-upstream origin feature/pr-gh-cli
+ 7881  git status
+ 7882  git add terraform/organization/environments/helm_values/prometheus-operator/stage/values.yaml
+ 7883  git add terraform/organization/environments/locals.tf
+ 7884  git commit -m 'Update config'
+ 7885  git push
+ 7886  git status
+ 7887  git diff
+ 7888  git status
+ 7889  git add terraform/organization/environments/locals.tf terraform/organization/environments/helm_values/prometheus-operator/stage/values.yaml
+ 7890  git commit -m 'Update annotations and host config'
+ 7892  git status
+ 7893  git add terraform/organization/environments/helm_values/nginx-ingress/stage/values.yaml
+ 7895  git add .
+ 7897  git status
+ 7898  git add terraform/organization/environments/locals.tf
+ 7899  git status
+ 7900  git commit -m 'Add nginx-ingress for prometheus'
+ 7901  git push
+ 7984  git status
+ 7985  git diff
+ 7986  git add terraform/organization/environments/helm_values/nginx-ingress/stage/values.yaml
+ 7987  git commit -m 'Try alternate image for nginx-ingress'
+ 7988  git push
+ 8018  git add .
+ 8019  git commit -m "linting testing"
+ 8020  git push
+ 8021  git tag -d dev/v1.8
+ 8022  git push origin --delete dev/v1.8
+ 8023  git tag -a dev/v1.8 -m "dev 1.8"
+ 8024  git push origin dev/v1.8
+ 8025  git add .
+ 8026  git commit -m "linting testing"
+ 8027  git push
+ 8028  git tag -d dev/v1.8
+ 8029  git push origin --delete dev/v1.8
+ 8030  git tag -a dev/v1.8 -m "dev 1.8"
+ 8031  git push origin dev/v1.8
+ 8032  git add .
+ 8033  git commit -m "linting testing"
+ 8034  git push
+ 8035  git tag -d dev/v1.8
+ 8036  git push origin --delete dev/v1.8
+ 8037  git tag -a dev/v1.8 -m "dev 1.8"
+ 8038  git push origin dev/v1.8
+ 8039  git add .
+ 8040  git commit -m "linting testing"
+ 8041  git push
+ 8042  git tag -d dev/v1.8
+ 8043  git push origin --delete dev/v1.8
+ 8044  git tag -a dev/v1.8 -m "dev 1.8"
+ 8045  git push origin dev/v1.8
+ 8046  git add .
+ 8047  git commit -m "linting testing"
+ 8048  git push
+ 8049  git tag -d dev/v1.8
+ 8050  git push origin --delete dev/v1.8
+ 8051  git tag -a dev/v1.8 -m "dev 1.8"
+ 8052  git push origin dev/v1.8
+ 8053  git add .
+ 8054  git commit -m "linting testing"
+ 8055  git push
+ 8056  git tag -d dev/v1.8
+ 8057  git push origin --delete dev/v1.8
+ 8058  git tag -a dev/v1.8 -m "dev 1.8"
+ 8059  git push origin dev/v1.8
+ 8060  git add .
+ 8061  git commit -m "linting testing"
+ 8062  git push
+ 8063  git tag -d dev/v1.8
+ 8064  git push origin --delete dev/v1.8
+ 8065  git tag -a dev/v1.8 -m "dev 1.8"
+ 8066  git push origin dev/v1.8
+ 8067  git add .
+ 8068  git commit -m "linting testing"
+ 8069  git push
+ 8070  git tag -d dev/v1.8
+ 8071  git push origin --delete dev/v1.8
+ 8072  git tag -a dev/v1.8 -m "dev 1.8"
+ 8073  git push origin dev/v1.8
+ 8074  git add .
+ 8075  git commit -m "linting testing"
+ 8076  git push
+ 8077  git tag -d dev/v1.8
+ 8078  git push origin --delete dev/v1.8
+ 8079  git tag -a dev/v1.8 -m "dev 1.8"
+ 8080  git push origin dev/v1.8
+ 8081  git add .
+ 8082  git commit -m "linting testing"
+ 8083  git push
+ 8084  git tag -d dev/v1.8
+ 8085  git push origin --delete dev/v1.8
+ 8086  git tag -a dev/v1.8 -m "dev 1.8"
+ 8087  git push origin dev/v1.8
+ 8088  git add .
+ 8089  git commit -m "linting testing"
+ 8090  git push
+ 8091  git tag -d dev/v1.8
+ 8092  git push origin --delete dev/v1.8
+ 8093  git tag -a dev/v1.8 -m "dev 1.8"
+ 8094  git push origin dev/v1.8
+ 8095  git branch -a
+ 8096  git status
+ 8097  git add .
+ 8098  git commit -m "linting testing"
+ 8099  git push
+ 8100  git checkout master
+ 8101  git checkout main
+ 8104  git checkpit feature/pr-gh-cli
+ 8105  git checkout feature/pr-gh-cli
+ 8251  git siff
+ 8252  git diff
+ 8258  git diff
+ 8262  git status
+ 8274  git status
+ 8275  git diff
+ 8276  git add .
+ 8277  git commit -m 'Fix nginx issue'
+ 8278  git push
+ 8283  git pull
+ 8284  git checkout master
+ 8285  git pull 
+ 8289  git branch
+ 8290  git checkout feature/prometheus-operator
+ 8291  git pull
+ 8293  git status
+ 8294  git add helm_values/nginx-ingress/stage/values.yaml
+ 8295  git commit -m 'Fix image repository nginx-ingress'
+ 8296  git push
+ 8355  wget https://github.com/mozilla/sops/releases/download/v3.6.1/sops_3.6.1_amd64.deb 
+ 8446  git status
+ 8447  git add .
+ 8448  git commit -m 'Alert Manager alerts config'
+ 8449  git push
+ 8450  git status
+ 8451  git add .
+ 8452  git commit -m "Remove line in prometeus config values"
+ 8453  git push
+ 8469  git status
+ 8470  git add .
+ 8471  git commit -m "Fix false positive EKS alarms alert manager"
+ 8472  git push
+ 8477  git pull
+ 8480  git checkout feature/nginx-logs-improvement 
+ 8481  git pull
+ 8579  cd appimages aws-iam-authenticator caylent change-password.json cleanSnap.sh decrypted.txt duckdns ecs-cli.asc ecsWorkshop.sh example-voting-app github-actions-demo helm2 helm3 helm-v2.16.7-linux-amd64.tar.gz helm-v3.2.1-linux-amd64.tar.gz k6-2.js keyring.deb key.txt kube-ps1 library ngrok personal remove-old-snaps sherlock snippets snsTest testing tf_switch ToInstallOnUbuntu caylent/OA
+ 8691  git clone https://github.com/pairity/pairity_score.git
+ 8692  git clone git@github.com:pairity/pairity_score.git
+ 8695  git fetch -a
+ 8696  git branch -a
+ 8697  git checkout issue-300_ci_to_run_code_quality_checks
+ 8698  git checkout master
+ 8699  git checkout issue-300_ci_to_run_code_quality_checks
+ 8700  git checkout master
+ 8701  git checkout issue-300_ci_to_run_code_quality_checks
+ 8704  git status
+ 8705  git restore .
+ 8707  git status
+ 8709  git add .
+ 8710  git commit -m "linting testing"
+ 8711  git push
+ 8712  git add .
+ 8713  git commit -m "linting testing"
+ 8714  git push
+ 8715  git add .
+ 8716  git commit -m "linting testing"
+ 8717  git push
+ 8718  git add .
+ 8719  git commit -m "linting testing"
+ 8720  git push
+ 8721  git add .
+ 8722  git commit -m "linting testing"
+ 8723  git push
+ 8724  git add .
+ 8725  git commit -m "linting testing"
+ 8726  git push
+ 8727  git add .
+ 8728  git commit -m "linting testing"
+ 8729  git push
+ 8730  git add .
+ 8731  git commit -m "linting testing"
+ 8732  git push
+ 8733  git add .
+ 8734  git commit -m "linting testing"
+ 8735  git push
+ 8736  git tag -d dev/v1.8
+ 8737  git push origin --delete dev/v1.8
+ 8738  git tag -a dev/v1.8 -m "dev 1.8"
+ 8739  git push origin dev/v1.8
+ 8740  git add .
+ 8741  git commit -m "linting testing"
+ 8742  git push
+ 8743  git tag -d dev/v1.8
+ 8744  git push origin --delete dev/v1.8
+ 8745  git tag -a dev/v1.8 -m "dev 1.8"
+ 8746  git push origin dev/v1.8
+ 8747  git add .
+ 8748  git commit -m "linting testing"
+ 8749  git push
+ 8750  git tag -d dev/v1.8
+ 8751  git push origin --delete dev/v1.8
+ 8752  git tag -a dev/v1.8 -m "dev 1.8"
+ 8753  git push origin dev/v1.8
+ 8754  git add .
+ 8755  git commit -m "linting testing"
+ 8756  git push
+ 8757  git tag -d dev/v1.8
+ 8758  git push origin --delete dev/v1.8
+ 8759  git tag -a dev/v1.8 -m "dev 1.8"
+ 8760  git push origin dev/v1.8
+ 8761  git add .
+ 8762  git commit -m "linting testing"
+ 8763  git push
+ 8764  git tag -d dev/v1.8
+ 8765  git push origin --delete dev/v1.8
+ 8766  git tag -a dev/v1.8 -m "dev 1.8"
+ 8767  git push origin dev/v1.8
+ 8768  git add .
+ 8769  git commit -m "linting testing"
+ 8770  git push
+ 8771  git tag -d dev/v1.8
+ 8772  git push origin --delete dev/v1.8
+ 8773  git tag -a dev/v1.8 -m "dev 1.8"
+ 8774  git push origin dev/v1.8
+ 8790  git add .
+ 8791  git commit -m "linting testing"
+ 8792  git push
+ 8793  git tag -d dev/v1.8
+ 8794  git push origin --delete dev/v1.8
+ 8795  git tag -a dev/v1.8 -m "dev 1.8"
+ 8796  git push origin dev/v1.8
+ 8800  git status
+ 8801  git add .
+ 8802  git commit -m "linting testing"
+ 8803  git push
+ 8804  git add .
+ 8805  git commit -m "linting testing"
+ 8806  git push
+ 8807  git tag -d dev/v1.8
+ 8808  git push origin --delete dev/v1.8
+ 8809  git tag -a dev/v1.8 -m "dev 1.8"
+ 8810  git push origin dev/v1.8
+ 8811  git add .
+ 8812  git commit -m "linting testing"
+ 8813  git push
+ 8814  git tag -d dev/v1.8
+ 8815  git push origin --delete dev/v1.8
+ 8816  git tag -a dev/v1.8 -m "dev 1.8"
+ 8817  git push origin dev/v1.8
+ 8819  git add .
+ 8820  git commit -m "linting testing"
+ 8821  git push
+ 8822  git tag -d dev/v1.8
+ 8823  git push origin --delete dev/v1.8
+ 8824  git tag -a dev/v1.8 -m "dev 1.8"
+ 8825  git push origin dev/v1.8
+ 8826  git add .
+ 8827  git commit -m "linting testing"
+ 8828  git push
+ 8829  git tag -d dev/v1.8
+ 8830  git push origin --delete dev/v1.8
+ 8831  git tag -a dev/v1.8 -m "dev 1.8"
+ 8832  git push origin dev/v1.8
+ 8833  git add .
+ 8834  git commit -m "linting testing"
+ 8835  git push
+ 8853  git add .
+ 8854  git commit -m "linting testing"
+ 8855  git push
+ 8856  git tag -d dev/v1.8
+ 8857  git push origin --delete dev/v1.8
+ 8858  git tag -a dev/v1.8 -m "dev 1.8"
+ 8859  git push origin dev/v1.8
+ 8860  git add .
+ 8861  git commit -m "linting testing"
+ 8862  git push
+ 8863  git tag -d dev/v1.8
+ 8864  git push origin --delete dev/v1.8
+ 8865  git tag -a dev/v1.8 -m "dev 1.8"
+ 8866  git push origin dev/v1.8
+ 8901  git status
+ 8902  git add terraform/organization/environments/helm_values/prometheus-operator/stage/values.yaml
+ 8903  git commit -m "Add promtail scrape logfile"
+ 8904  git push
+ 8962  git checkout master
+ 8963  git pull
+ 8964  git checkout feature/prometheus-operator
+ 8965  git merge origin/master
+ 8970  git status
+ 8971  git add ../../modules/eks/helm.tf
+ 8972  git commit -m "Add loki chart repo"
+ 8973  git push
+ 8974  git add ../../modules/eks/helm.tf
+ 8975  git commit -m "Add loki chart repo"
+ 8976  git push
+ 8985  git statis
+ 8986  git status
+ 8987  git add locals.tf helm_values/loki/
+ 8988  git status
+ 8989  git commit
+ 8990  git status
+ 8991  git add helm_values/loki/stage/values.yaml
+ 9008  git status
+ 9012  git status
+ 9024  git status
+ 9025  git commit -m 'Add loki to tf'
+ 9026  git status
+ 9027  git add helm_values/prometheus-operator/stage/values.yaml
+ 9028  git commit -m 'Increase resoure limits prometheus operator pods'
+ 9029  git push
+ 9032  git pull
+ 9034  git branch -a
+ 9035  git checkout master
+ 9036  git pull
+ 9037  git checkout dev-aws\n
+ 9038  git pull
+ 9040  git checkout feature/pipeline-refactor
+ 9041  git checkout dev-aws
+ 9042  git pull
+ 9043  git checkout -b fix/dev-aws-pipeline-set-env-issue
+ 9044  git diff
+ 9046  git diff
+ 9047  git add .github/workflows/frontend.yml
+ 9048  git commit
+ 9050  git status
+ 9051  git add .github/workflows/backend.yml .github/workflows/frontend.yml
+ 9052  git status
+ 9053  git commit
+ 9054  git push
+ 9055  git push --set-upstream origin fix/dev-aws-pipeline-set-env-issue
+ 9064  git branch -a
+ 9066  git config --global user.name
+ 9067  git config --global user.email
+ 9068  git config --global user.name "Gary Mc Dermott"
+ 9069  git config --global user.email "gary@caylent.com"
+ 9070  git checkout master
+ 9071  git congif user.name
+ 9072  git congig user.name
+ 9073  git config user.name
+ 9074  git config user.email
+ 9075  git checkout fix/dev-aws-pipeline-set-env-issue
+ 9076  git log
+ 9077  git show
+ 9078  git remote -v 
+ 9079  git config --global user.email
+ 9080  git config --global user.name
+ 9082  git log
+ 9083  git change-commits GIT_AUTHOR_EMAIL "mcdermg@tcd.ie" "gary@caylent.com"
+ 9084  git change-commits GIT_AUTHOR_NAME "mcdermg" "Gary MC Dermott"
+ 9085  git --help
+ 9087  git checkout master
+ 9088  git log -1 --pretty=format:'%an'
+ 9089  git checkout fix/dev-aws-pipeline-set-env-issue
+ 9090  git log -1 --pretty=format:'%an'
+ 9091  git log -1 --pretty=format
+ 9092  git log -1
+ 9093  git log
+ 9094  git commit --amend --author="Gary Mc Dermott <gary@caylent.com>"
+ 9095  git log
+ 9096  git push
+ 9097  git pull
+ 9098  git chekout master
+ 9099  git checkout master
+ 9100  git branch -d fix/dev-aws-pipeline-set-env-issue
+ 9101  git branch -D fix/dev-aws-pipeline-set-env-issue
+ 9102  git push origin --delete fix/dev-aws-pipeline-set-env-issue
+ 9103  git checkout dev-aws
+ 9105  git pull
+ 9106  git checkout -b fix/dev-aws-pipeline-set-env-issue
+ 9107  git status
+ 9108  git diff
+ 9109  git status
+ 9110  git config --list
+ 9111  git config user.name
+ 9112  git config user.email
+ 9113  git status
+ 9114  git add .github/workflows/backend.yml .github/workflows/frontend.yml
+ 9115  git commit
+ 9116  git push
+ 9117  git push --set-upstream origin fix/dev-aws-pipeline-set-env-issue
+ 9120  git log
+ 9133  git branch -a
+ 9134  git checkout staging-aws
+ 9135  git checkout -b fix/stage-aws-pipeline-set-env-issue
+ 9136  git diff
+ 9137  git commit
+ 9138  git status
+ 9139  git add .github/workflows/backend.yml .github/workflows/frontend.yml
+ 9140  git commit
+ 9141  git push
+ 9142  git push --set-upstream origin fix/stage-aws-pipeline-set-env-issue
+ 9144  git branch
+ 9145  git checkout master
+ 9146  git checkout -b 
+ 9147  git checkout -b fix/prod-aws-pipeline-set-env-issue
+ 9148  git diff
+ 9149  git status
+ 9150  git add .github/workflows/frontend.yml
+ 9151  git diff
+ 9152  git add .github/workflows/backend.yml
+ 9153  git status
+ 9154  git commit
+ 9155  git push
+ 9156  git push --set-upstream origin fix/prod-aws-pipeline-set-env-issue
+ 9162  git status
+ 9163  git restore s3.tf
+ 9165  git status
+ 9168  git status
+ 9178  git status
+ 9179  git diff
+ 9180  git add locals.tf
+ 9181  git commit -m 'Alter loki helm install name'
+ 9182  git push
+ 9186  git diff
+ 9187  git status
+ 9188  git reset helm_values/prometheus-operator/stage/values.yaml
+ 9189  git status
+ 9190  git restore helm_values/prometheus-operator/stage/values.yaml
+ 9191  git status
+ 9193  git status
+ 9194  git add .
+ 9195  git commit
+ 9196  git push
+ 9197  git status
+ 9198  git add .
+ 9199  git commit -m 'Bump Anchore GH action to v2'
+ 9200  git push
+ 9201  git status
+ 9202  git add .
+ 9203  git commit -m 'Bump Anchore GH action to v2'
+ 9204  git push
+ 9207  git pull
+ 9209  git branch 
+ 9210  git branch -d feature/add-elasticache-support
+ 9211  git branch -d feature/prometheus-operator
+ 9213  git branch
+ 9314  git clone git@github.com-personal:awslabs/amazon-eks-ami.git
+ 9317  git config user.name
+ 9318  git config user.name "mcdermg"
+ 9319  git config user.email "mcdermg@tcd.ie"
+ 9321  git config user.email
+ 9323  git config user.email
+ 9351  git pull
+ 9352  git branch -a
+ 9353  git checkout feature/loki-s3
+ 9354  git stash
+ 9355  git checkout feature/loki-s3
+ 9361  git checkout -b fix/anchore-scanning-issue
+ 9362  git status
+ 9363  git diff
+ 9364  git commit -m 'Update     - name: upload Anchore scan SARIF report'
+ 9365  git commit\\n
+ 9366  git status
+ 9367  git add .
+ 9368  git status
+ 9369  git commit
+ 9370  git add .
+ 9371  git commit
+ 9373  git push
+ 9374  git push --set-upstream origin fix/anchore-scanning-issue
+ 9376  git add .
+ 9377  git commit -m 'Anchor GH steps continue-on-error'
+ 9378  git push
+ 9379  git checkout dev-aws
+ 9380  git pull
+ 9381  git branch
+ 9382  git checkout fix/anchore-scanning-issue
+ 9383  git merge origin/dev-aws
+ 9384  git status
+ 9385  git diff
+ 9386  git push
+ 9387  git checkout dev-aws
+ 9388  git pull
+ 9389  git checkoutt master
+ 9390  git checkout master
+ 9391  git status
+ 9392  git add .
+ 9393  git commit -m "Anchore update to match dev"
+ 9394  git push
+ 9395  git diff
+ 9396  git add .
+ 9397  git log
+ 9398  git stash
+ 9399  git log
+ 9400  git stash apply
+ 9401  git stash
+ 9402  git log
+ 9403  git stash apply
+ 9404  git status
+ 9405  git add .
+ 9406  git commit -m "Anchore update to match dev"
+ 9407  git push
+ 9408  git checkout dev-aws
+ 9409  git pull
+ 9410  git branch
+ 9411  git branch -d fix/stage-aws-pipeline-set-env-issue
+ 9412  git branch -d fix/dev-aws-pipeline-set-env-issue
+ 9413  git branch
+ 9414  git branch -d fix/anchore-scanning-issue
+ 9415  git branch
+ 9416  git branch -d fix/e2e-aws-dev
+ 9418  git branch
+ 9419  git checkout staging-aws
+ 9420  git pull
+ 9421  git checkout dev-aws
+ 9422  git pull
+ 9441  git pull
+ 9442  git checkout master
+ 9443  git pull
+ 9444  git checkout feature/loki-s3
+ 9445  git pull
+ 9457  git pull
+ 9459  git branch -d feature/loki-s3
+ 9461  git pull
+ 9462  git fetch
+ 9484  git pull
+ 9501  git checkout -b feature/prometheus-operator-nodeselector
+ 9502  git status
+ 9600  git status
+ 9601  git branch -a
+ 9602  git branch -a | grep node
+ 9603  git branch -m 'feature/prometheus-tuning'
+ 9604  git add helm_values/loki/stage/values.yaml helm_values/prometheus-operator/stage/values.yaml
+ 9605  git status
+ 9606  git commit
+ 9607  git push
+ 9608  git push --set-upstream origin feature/prometheus-tuning
+ 9631  git status
+ 9632  git add .
+ 9633  git committ -m 'more python'
+ 9634  git commit -m 'more python'
+ 9635  git log
+ 9636  git push
+ 9641  git pull
+ 9643  git log
+ 9656  git status
+ 9657  git add terraform/organization/shared-services/ecr.tf
+ 9658  git status
+ 9685  git status
+ 9688  git status
+ 9689  git add ecr.tf
+ 9690  git diff
+ 9691  git commit -m 'add monitoring ECR'
+ 9692  git add git status
+ 9693  git status
+ 9694  git add ../../modules/s3/main.tf
+ 9695  git commit
+ 9703  git diff
+ 9704  git push
+ 9705  git checkout master
+ 9706  git pull
+ 9707  git checkout feature/prometheus-tuning
+ 9711  git status
+ 9712  git add tf_state.tf provider.tf variables.tf
+ 9713  git status
+ 9714  git diff
+ 9715  git status
+ 9716  git diff
+ 9717  git add .
+ 9718  git status
+ 9719  git add ../../modules/s3/provider.tf
+ 9720  git status
+ 9721  git commit
+ 9722  git push
+ 9723  git checkout master
+ 9724  git pull
+ 9725  git checkout feature/prometheus-tuning
+ 9746  git status
+ 9747  git add ecr.tf
+ 9752  git status
+ 9753  git commit -m 'php ecr in us-east-2'
+ 9754  git push
+ 9757  git merge origin/master
+ 9759  git log
+ 9760  git push
+ 9765  git status
+ 9766  git add ../environments/locals.tf
+ 9767  git commit -m 'increase static node group desired size to 2'
+ 9768  git push
+ 9781  git status
+ 9783  git status
+ 9784  git checkout feature/prometheus-prod
+ 9785  git checkout -b feature/prometheus-prod
+ 9788  git status
+ 9789  git diff
+ 9790  git add locals.tf
+ 9792  git status
+ 9793  git add helm_values/loki/prod/ helm_values/nginx-ingress/prod/ helm_values/prometheus-operator/prod/
+ 9794  git status
+ 9795  git commgit restore --staged locals.tf
+ 9796  git restore --staged locals.tf
+ 9797  git status
+ 9798  git commit
+ 9799  git status
+ 9801  git status
+ 9803  git status
+ 9804  git stash
+ 9806  git status
+ 9807  git add ../../modules/s3/main.tf tf_state.tf variables.tf
+ 9809  git commit 
+ 9810  git push
+ 9811  git merge origin/master
+ 9812  git status
+ 9813  git add variables.tf
+ 9814  git status
+ 9815  git commit -m 'Incorporate changes from master'
+ 9823  git stash list
+ 9824  git stash show
+ 9825  git stash pop
+ 9826  git diff
+ 9878  git status
+ 9879  git add locals.tf
+ 9880  git diff
+ 9881  git commit -m 'settings'
+ 9882  git push
+ 9883  git push --set-upstream origin feature/prometheus-prod
+ 9884  git push
+ 9919  git status
+ 9921  git add locals.tf
+ 9922  git status
+ 9923  git commit
+ 9924  git push
+ 9953  git status
+ 9954  git add terraform/modules/s3/main.tf
+ 9955  git commit -m 'Add region back to S3 module'
+ 9956  git push
+ 9957  git status
+ 9958  git checkout master
+ 9959  git pull
+ 9960  git branch
+ 9961  git branch -d feature/prometheus-tuning
+10001  git branch -a
+10002  git fetch
+10003  git branch -a
+10005  git checkout -b "feature/cloudwatch-slack-alarms"
+10028  git stash
+10041  github-actions.auth.org-login
+10042  cd /home/gary/repos/testing/github/course
+10044  git init
+10045  git add .
+10046  git commit -m 'initial commit'
+10047  git push
+10048  less ~/.gitconfig
+10049  git stats
+10050  git status
+10051  git add .
+10059  git status
+10060  git commit .
+10061  git status
+10062  git add .
+10063  git commit
+10064  git branch -m master main
+10065  git push
+10066  git push --set-upstream origin main
+10067  git user.name
+10068  git remote add origin git@github.com:Celestial-Industries/actions-course.git
+10069  git push
+10070  git config user.name
+10071  git config user.email
+10072  git remote -v
+10073  git remote set-url origin git@github.com-personal:Celestial-Industries/actions-course.git
+10074  git remote -v
+10075  git push
+10076  git push --set-upstream origin main
+10077  git add .
+10078  git commit -m 'Fix typo workflow'
+10079  git push
+10080  git add .
+10081  git commit
+10082  git add .
+10083  git commit
+10084  git push
+10085  git add .
+10086  git commit
+10087  git push
+10088  git add .
+10090  git push
+10091  git commit -m 'Fix typo in windows command'
+10092  git push
+10093  git add .
+10094  git commit -m 'Action'
+10095  git push
+10096  git add .
+10097  git commit -m 'Fix typo in output'
+10098  git push
+10103  git add .
+10104  git commit -m 'Fix typo in output'
+10105  git push
+10107  git add .
+10108  git commit -m 'outputs'
+10109  git push
+10110  git add .
+10111  git commit -m 'outputs again'
+10112  git push
+10113  git add .
+10114  git commit -m 'more outputs'
+10115  git push
+10116  git add .
+10117  git commit -m 'Yet more outputs'
+10118  git push
+10119  git add .
+10120  git commit -m 'Yet more outputs'
+10121  git push
+10122  git add .
+10123  git commit -m 'Repo dispatch'
+10124  git push
