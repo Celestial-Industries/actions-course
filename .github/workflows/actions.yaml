@@ -70,6 +70,10 @@ jobs:
 
 # add another step here pringing the output of above
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#steps-context
+      - name: failure outcome debug
+        run: |
+          'echo ${{ steps.outcome.conclusion }}'
+          'echo ${{ steps.failure.conclusion }}'
 
       - name: Failure notification
         uses: act10ns/slack@v1
