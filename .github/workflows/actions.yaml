@@ -61,7 +61,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ windows-latest, ubuntu-latest, macos-latest ]
+        os: [ ubuntu-20.04, Ubuntu 18.04, ubuntu-16.04 ]
+#        os: [ windows-latest, ubuntu-latest, macos-latest ]
 
     steps:
       - name: test all shells
