@@ -27,6 +27,9 @@ jobs:
           echo ${ GITHUB_REPOSITORY }
           echo ${ GITHUB_WORKSPACE }
 
+      - name: Dispatch Output
+      - run: 'echo "field: ${{ github.event.client_payload.version }}"'
+
 #      - name: simple JS actions
 #        id: greet
 #        uses: actions/hello-world-javascript-action@main
