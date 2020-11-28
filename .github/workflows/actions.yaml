@@ -8,9 +8,9 @@ on:
       - main
 #      - 'dev'
 #      - '!feature/**'
-#    tags:
-#      - 'v**'
-#      - '!v1.0'
+    tags:
+      - 'v**'
+      - '!v1.0'
 #    paths:
 #      - '**.py'
 #      - '!docs/**'
