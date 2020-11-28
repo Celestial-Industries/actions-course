@@ -41,11 +41,16 @@ jobs:
         run: |
           pwd
           ls
-          echo ${GITHUB_SHA}
-          echo ${GITHUB_SHA::8}
-          echo ${GITHUB_REF}
-          echo ${GITHUB_REPOSITORY}
-          echo ${GITHUB_WORKSPACE}
+#          echo ${GITHUB_SHA}
+          echo github.sha
+#          echo ${GITHUB_SHA::8}
+          echo github.sha::8
+#          echo ${GITHUB_REF}
+          echo github.ref
+#          echo ${GITHUB_REPOSITORY}
+          echo github.repository
+#          echo ${GITHUB_WORKSPACE}
+          echo github.workspace
 
       - name: Dispatch Output
         id: Dispatch_Output
