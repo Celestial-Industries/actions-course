@@ -27,11 +27,12 @@ on:
 #    - cron: "15 14 * * *"
 #    - cron: "15 21 * * *"
 
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -60,6 +61,7 @@ jobs:
       - name: Log Greeting
         run: echo "${{ steps.greet.outputs.time }}"
 
+# 1. Multi lint jobs like this
       - name: failure
         id: failure
         if: github.ref == 'refs/heads/main'
@@ -101,8 +103,6 @@ jobs:
          os: [ ubuntu-20.04 ]
 #        os: [ ubuntu-20.04, ubuntu-18.04, ubuntu-16.04 ]
 #        os: [ windows-latest, ubuntu-latest, macos-latest ]
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
     steps:
       - name: test all shells
