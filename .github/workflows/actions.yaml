@@ -63,11 +63,12 @@ jobs:
       - name: failure
         id: failure
         #if: contains(github.ref, 'dev/v')
-        if: ${GITHUB_REF} == 'refs/heads/main'
-#        continue-on-error: true
+        if: GITHUB_REF == 'refs/heads/main'
+#        if: github.ref == 'specific-branch'
         run: |
           echo "Error!" 1>&2
           exit 64
+#        continue-on-error: true
 
       - name: Failure notification
         uses: act10ns/slack@v1
