@@ -60,6 +60,12 @@ jobs:
       - name: Log Greeting
         run: echo "${{ steps.greet.outputs.time }}"
 
+      - name: failure
+        id: failure
+        run: |
+          echo "Error!" 1>&2
+          exit 64
+
       - name: Failure notification
         uses: act10ns/slack@v1
         with:
