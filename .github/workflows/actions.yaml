@@ -11,10 +11,10 @@ on:
     tags:
       - 'v**'
       - '!v1.0'
-#    paths:
-#      - '**.py'
-#      - '!docs/**'
-#      - '!test.js'
+    paths:
+      - '**.py'
+      - '!docs/**'
+      - '!test.js'
   pull_request:
     branches:
       - main
