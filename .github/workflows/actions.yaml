@@ -3,7 +3,7 @@ name: Actions Workflow
 on:
   repository_dispatch:
     types: [ build ]
-#  push:
+  push:
   pull_request:
     types: [ opened, reopened ]
 #  schedule:
@@ -28,7 +28,7 @@ jobs:
           echo ${ GITHUB_WORKSPACE }
 
       - name: Dispatch Output
-      - run: 'echo "field: ${{ github.event.client_payload.version }}"'
+        run: 'echo "field: ${{ github.event.client_payload.version }}"'
 
 #      - name: simple JS actions
 #        id: greet
