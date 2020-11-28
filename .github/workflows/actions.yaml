@@ -11,11 +11,12 @@ on:
     tags:
       - 'v**'
       - '!v1.0'
-    paths:
-      - '**.py'
-      - .github/**
-      - '!docs/**'
-      - '!test.js'
+#    # Careful or wont trigger at all
+#    paths:
+#      - '**.py'
+#      - .github/**
+#      - '!docs/**'
+#      - '!test.js'
   pull_request:
     branches:
       - main
