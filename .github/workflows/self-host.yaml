@@ -2,20 +2,15 @@ name: Actions Runner Controller Demo
 on:
   push:
     branches:
-      - dev
       - main
+      - dev
   workflow_dispatch:
     branches:
-      - dev
       - main
-
-env:
-  RUNNER: ${{ vars.RUNNER }}
+      - dev
 
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ${{ env.RUNNER }}
-    environment: 
-      name: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+    runs-on: ${{ vars.RUNNER }}
     steps:
-    - run: echo "🎉 This job uses runner scale set runners!"
+    - run: echo "🎉 This
