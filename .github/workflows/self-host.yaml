@@ -10,12 +10,20 @@ on:
       - dev
 
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ${{ secrets.RUNNER }}
-    environment: 
-      name: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+  Explore-GitHub-Actions-Prod:
+    if: github.ref == 'refs/heads/main'
+    runs-on: arc-runner-set-01
     steps:
     - name: Debug var RUNNER
-      run: echo "The value of var.RUNNER is ${{ secret.RUNNER }}"
+      run: echo "The value of var.RUNNER is ${{ secrets.RUNNER_PROD }}"
+    - name: confirm self hosted runners
+      run: echo "🎉 This job uses runner scale set runners!"
+
+  Explore-GitHub-Actions-Dev:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: arc-runner-set-02
+    steps:
+    - name: Debug var RUNNER
+      run: echo "The value of var.RUNNER is ${{ secrets.RUNNER_DEV }}"
     - name: confirm self hosted runners
       run: echo "🎉 This job uses runner scale set runners!"
