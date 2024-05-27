@@ -1,16 +1,10 @@
-name: Actions Runner Controller Demo
-on:
-  push:
-    branches:
-      - main
-      - dev
-  workflow_dispatch:
-    branches:
-      - main
-      - dev
-
 jobs:
   Explore-GitHub-Actions:
     runs-on: ${{ vars.RUNNER }}
+    environment: 
+      name: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
     steps:
-    - run: echo "🎉 This
+    - name: Debug var RUNNER
+      run: echo "The value of var.RUNNER is ${{ env.RUNNER }}"
+    - name: confirm self hosted runners
+      run: echo "🎉 This job uses runner scale set runners!"
