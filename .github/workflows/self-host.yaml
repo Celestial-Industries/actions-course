@@ -9,18 +9,13 @@ on:
       - dev
       - main
 
+env:
+  RUNNER: ${{ vars.RUNNER }}
+
 jobs:
   Explore-GitHub-Actions:
-    strategy:
-      matrix:
-        env: [prod, dev]
-        include:
-          - env: prod
-            runner: arc-runner-set-01
-          - env: dev
-            runner: arc-runner-set-02
-    runs-on: ${{ matrix.runner }}
+    runs-on: ${{ env.RUNNER }}
     environment: 
-      name: ${{ matrix.env }}
+      name: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
