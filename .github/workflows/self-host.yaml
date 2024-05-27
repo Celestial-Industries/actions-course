@@ -11,11 +11,11 @@ on:
 
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ${{ vars.RUNNER }}
+    runs-on: ${{ secrets.RUNNER }}
     environment: 
       name: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
     steps:
     - name: Debug var RUNNER
-      run: echo "The value of var.RUNNER is ${{ env.RUNNER }}"
+      run: echo "The value of var.RUNNER is ${{ secret.RUNNER }}"
     - name: confirm self hosted runners
       run: echo "🎉 This job uses runner scale set runners!"
