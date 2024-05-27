@@ -1,3 +1,14 @@
+name: Actions Runner Controller Demo
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+    branches:
+      - main
+      - dev
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ${{ vars.RUNNER }}
